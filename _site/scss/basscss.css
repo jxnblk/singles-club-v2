@@ -642,7 +642,7 @@ h6, .h6, small {
 
 body {
   color: #333333;
-  background-color: #fff; }
+  background-color: #000; }
 
 a {
   color: #0096cc;
@@ -650,6 +650,11 @@ a {
   a:hover {
     color: #007199;
     text-decoration: underline; }
+
+.main-nav {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #777777; }
 
 .white {
   color: #fff; }
