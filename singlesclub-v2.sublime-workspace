@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"border",
+				"border-bottom"
+			],
+			[
 				"Karma",
 				"Karma"
 			],
@@ -43,15 +47,15 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 287.0,
+		"height": 400.0,
 		"selected_items":
 		[
 			[
 				"Package Control: ",
-				"Package Control: Install Package"
+				"Package Control: List Packages"
 			]
 		],
-		"width": 449.0
+		"width": 419.0
 	},
 	"console":
 	{
@@ -68,6 +72,17 @@
 	},
 	"file_history":
 	[
+		"/Users/chrismuccioli/singles-club-v2/scss/_colors.scss",
+		"/Users/chrismuccioli/singles-club-v2/scss/_navs.scss",
+		"/Users/chrismuccioli/singles-club-v2/index.html",
+		"/Users/chrismuccioli/singles-club-v2/scss/_theme.scss",
+		"/Users/chrismuccioli/singles-club-v2/.sass-cache/ce50b7420533baeab0a361fa352592b858fbada6/_project-images.scssc",
+		"/Users/chrismuccioli/singles-club-v2/scss/_variables.scss",
+		"/Users/chrismuccioli/singles-club-v2/journal/small-sur/index.html",
+		"/Users/chrismuccioli/singles-club-v2/_includes/head.html",
+		"/Users/chrismuccioli/singles-club-v2/test.haml.html",
+		"/Users/chrismuccioli/singles-club-v2/scss/_nav.scss",
+		"/Users/chrismuccioli/singles-club-v2/scss/_grid.scss",
 		"/Users/chrismuccioli/kickstarter/config/routes.rb",
 		"/Users/chrismuccioli/kickstarter/config/features.yml",
 		"/Users/chrismuccioli/kickstarter/app/views/events/filmfest2014.haml",
@@ -184,18 +199,7 @@
 		"/Users/chrismuccioli/singles-club/journal/small-sur/index.html",
 		"/Users/chrismuccioli/singles-club/_includes/_player-nav.html",
 		"/Users/chrismuccioli/singles-club/_includes/_player.html",
-		"/Users/chrismuccioli/singles-club/journal/daniel-bachman/index.html",
-		"/Users/chrismuccioli/singles-club/_includes/_newsletter.html",
-		"/Users/chrismuccioli/singles-club/css/_basscss.scss",
-		"/Users/chrismuccioli/singles-club/css/_widths.scss",
-		"/Users/chrismuccioli/singles-club/css/_type.scss",
-		"/Users/chrismuccioli/singles-club/css/_theme.scss",
-		"/Users/chrismuccioli/singles-club/css/_homepage.scss",
-		"/Users/chrismuccioli/singles-club/css/_images.scss",
-		"/Users/chrismuccioli/singles-club/css/_grid.scss",
-		"/Users/chrismuccioli/singles-club/css/style.scss",
-		"/Users/chrismuccioli/singles-club/journal/small-sur/index-1.html",
-		"/Users/chrismuccioli/Dropbox (Kickstarter)/Projects/SinglesClub/Website/issue2/index.html"
+		"/Users/chrismuccioli/singles-club/journal/daniel-bachman/index.html"
 	],
 	"find":
 	{
@@ -356,6 +360,30 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"face",
+				".sass-cache/ce50b7420533baeab0a361fa352592b858fbada6/_project-images.scssc"
+			],
+			[
+				"the",
+				"scss/_theme.scss"
+			],
+			[
+				"index",
+				"journal/small-sur/index.html"
+			],
+			[
+				"head",
+				"_includes/head.html"
+			],
+			[
+				"them",
+				"scss/_theme.scss"
+			],
+			[
+				"inde",
+				"index.html"
+			],
 			[
 				"storiesca",
 				"kickstarter/app/views/stories/cah.haml"
@@ -645,10 +673,6 @@
 				"app/assets/stylesheets/library/type/type.sass"
 			],
 			[
-				"index",
-				"app/views/site/index.html.haml"
-			],
-			[
 				"spotlight_project_car",
 				"app/views/spotlight_projects/_carousel.haml"
 			],
@@ -847,26 +871,6 @@
 			[
 				"1bil",
 				"public/1billion/css/_1billion.sass"
-			],
-			[
-				"1bi",
-				"app/views/site/1billion.html"
-			],
-			[
-				"padd",
-				"app/assets/stylesheets/library/layout/_padding.sass"
-			],
-			[
-				"player",
-				"_includes/_player.html"
-			],
-			[
-				"newsle",
-				"_includes/_newsletter.html"
-			],
-			[
-				"small",
-				"journal/small-sur/index.html"
 			]
 		],
 		"width": 0.0
