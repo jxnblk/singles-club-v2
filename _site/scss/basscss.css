@@ -219,6 +219,18 @@ h6, .h6, small {
 .pt4 {
   padding-top: 4rem; }
 
+.pb1 {
+  padding-bottom: 0.5rem; }
+
+.pb2 {
+  padding-bottom: 1rem; }
+
+.pb3 {
+  padding-bottom: 2rem; }
+
+.pb4 {
+  padding-bottom: 4rem; }
+
 .inline {
   display: inline; }
 
@@ -685,6 +697,10 @@ a {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-color: #777777; }
+
+.rss-feed {
+  padding-top: 30px;
+  padding-bottom: 30px; }
 
 .feedEkList {
   list-style: none;
