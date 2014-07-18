@@ -686,6 +686,35 @@ a {
   border-bottom-width: 1px;
   border-color: #777777; }
 
+.recent-posts {
+  margin-left: -2.5%;
+  margin-right: -17.8%; }
+
+.rssincl-entry {
+  float: left;
+  width: 27.3%;
+  overflow: hidden;
+  padding: .9%; }
+
+.rssincl-itemimage {
+  width: 100%;
+  height: 200px;
+  overflow: hidden; }
+
+.rssincl-itemimage img {
+  width: auto;
+  height: auto; }
+
+.rssincl-itemtitle {
+  text-align: center; }
+
+@media screen and (max-width: 960px) {
+  .recent-posts {
+    margin-right: -14.5%; } }
+@media screen and (max-width: 32em) {
+  .rssincl-entry {
+    width: 75%;
+    padding-left: 8%; } }
 .white {
   color: #fff; }
 
