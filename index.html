@@ -5,12 +5,14 @@ description: "Part record club. Part music journal."
 {% include head.html %}
 
 <!-- jQuery library (served from Google) -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <!-- bxSlider Javascript file -->
 <script src="/js/jquery.bxslider.min.js"></script>
 <script src="/js/js.js"></script>
 <!-- bxSlider CSS file -->
 <link href="/../lib/jquery.bxslider.css" rel="stylesheet" />
+<script type="text/javascript" src="/js/FeedEk.js"></script>
 
 <body>
 
@@ -24,6 +26,18 @@ $('.bxslider').bxSlider({
   pagerCustom: '#bx-pager'
 });
   });
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+$('#divRss').FeedEk({
+    FeedUrl : 'http://www.singlesclub.fm/blog/feed/',
+    MaxCount : 3,
+    ShowDesc : true,
+    ShowPubDate: false,
+    DescCharacterLimit:0,
+    TitleLinkTarget:'_blank'
+  });
+ });
 </script>
 
   <div data-component="navbar" class="main-nav clearfix white bg-dark-gray py2 px2">
@@ -47,6 +61,7 @@ $('.bxslider').bxSlider({
     </div>
   </div>
 
+
   <div class="container">
     <div class="center py3">
         <div class="h2 white">
@@ -54,8 +69,7 @@ $('.bxslider').bxSlider({
         </div>
     </div>
   </div>
-
-<div class="container px2">
+<div class="container">
   <div class="row">
       <ul class="bxslider full-width">
         <li><img src="/images/1.jpg" /></li>
@@ -73,11 +87,11 @@ $('.bxslider').bxSlider({
     </div>
   </div>
 </div>
-<div class="container">
-  <div class="recent-posts">
-    <script type="text/javascript" src="http://output82.rssinclude.com/output?type=js&amp;id=900051&amp;hash=7d1d7cf067ae1d71a4ee01a4aff73bf4"></script>
+<div class="container rss-feed">
+  <div class="center" id="divRss">
   </div>
 </div>
+
 
 </body>
 
