@@ -613,7 +613,7 @@ h6, .h6, small {
     display: table-cell;
     vertical-align: middle; }
 
-@media (min-width: 32em) {
+@media (min-width: 768px) {
   .nav-table {
     display: table; }
     .nav-table > a,
@@ -687,34 +687,49 @@ a {
   border-color: #777777; }
 
 .recent-posts {
-  margin-left: -2.5%;
-  margin-right: -17.8%; }
+  margin-left: -2.7%;
+  margin-right: -5.1%; }
 
 .rssincl-entry {
   float: left;
-  width: 27.3%;
   overflow: hidden;
-  padding: .9%; }
+  width: 30%;
+  padding: 1rem; }
 
 .rssincl-itemimage {
   width: 100%;
-  height: 200px;
+  height: 250px;
   overflow: hidden; }
 
 .rssincl-itemimage img {
-  width: auto;
+  width: 110%;
   height: auto; }
 
 .rssincl-itemtitle {
   text-align: center; }
 
-@media screen and (max-width: 960px) {
-  .recent-posts {
-    margin-right: -14.5%; } }
-@media screen and (max-width: 32em) {
+@media screen and (min-width: 720px) and (max-width: 1152px) {
+  .rssincl-itemimage img {
+    max-height: 264px; }
+
   .rssincl-entry {
-    width: 75%;
-    padding-left: 8%; } }
+    width: 29%;
+    padding-right: 1.5%; }
+
+  .recent-posts {
+    margin-right: 0;
+    margin-left: 1.3%; } }
+@media screen and (max-width: 768px) {
+  .rssincl-entry {
+    float: initial;
+    width: 90%;
+    padding: 5%; }
+
+  .recent-posts {
+    margin: 0; }
+
+  .rssincl-itemimage {
+    height: 180px; } }
 .white {
   color: #fff; }
 

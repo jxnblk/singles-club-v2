@@ -24,25 +24,25 @@ a {
 // RSS Feed
 
 .recent-posts {
-  margin-left: -2.5%;
-  margin-right: -17.8%;
+  margin-left: -2.7%;
+  margin-right: -5.1%;
 }
 
 .rssincl-entry {
   float: left;
-  width: 27.3%;
   overflow: hidden;
-  padding: .9%;
+  width: 30%;
+  padding: 1rem;
 }
 
 .rssincl-itemimage {
   width: 100%;
-  height: 200px;
+  height: 250px;
   overflow: hidden;
 }
 
 .rssincl-itemimage img {
-  width: auto;
+  width: 110%;
   height: auto;
 }
 
@@ -51,10 +51,20 @@ a {
 }
 
 //Mobile Styles
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 720px) and (max-width: 1152px) {
+
+.rssincl-itemimage img {
+
+  max-height: 264px;
+}
+.rssincl-entry {
+  width: 29%;
+  padding-right: 1.5%;
+}
 
 .recent-posts {
-  margin-right: -14.5%;
+  margin-right: 0;
+  margin-left: 1.3%;
 }
 
 }
@@ -63,9 +73,17 @@ a {
 @media screen and (max-width: $breakpoint-mobile) {
 
 .rssincl-entry {
-  width: 75%;
-  padding-left: 8%;
+  float: initial;
+  width: 90%;
+  padding: 5%;
 }
 
+.recent-posts {
+  margin: 0;
+}
+
+.rssincl-itemimage {
+  height: 180px;
+}
 }
 
