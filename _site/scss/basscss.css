@@ -688,7 +688,13 @@ a {
 
 .feedEkList {
   list-style: none;
-  margin-left: -30px; }
+  margin-left: -50px; }
+
+.itemContainer {
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
 
 .itemContent img {
   width: 100%;
@@ -697,6 +703,11 @@ a {
 .itemContent p {
   display: none; }
 
+@media screen and (max-width: 768px) {
+  .recent-posts {
+    box-sizing: border-box;
+    padding-right: 0;
+    padding-left: 0; } }
 .white {
   color: #fff; }
 

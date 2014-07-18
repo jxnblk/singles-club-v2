@@ -25,7 +25,12 @@ a {
 
 .feedEkList {
   list-style: none;
-  margin-left: -30px;
+  margin-left: -50px;
+}
+
+.itemContainer {
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
 }
 
 .itemContent img {
@@ -37,3 +42,11 @@ a {
   display: none;
 }
 
+// Mobile Styling
+@media screen and (max-width: $breakpoint-mobile) {
+  .recent-posts {
+    box-sizing: border-box;
+    padding-right: 0;
+    padding-left: 0;
+  }
+ }

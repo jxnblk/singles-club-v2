@@ -26,7 +26,7 @@
             success: function (data) {
                 $("#" + id).empty();
                 $.each(data.responseData.feed.entries, function (e, item) {
-                    s += '<li><div class="col col-4 recent-posts"><div class="itemTitle"><a href="' + item.link + '" target="' + def.TitleLinkTarget + '" >' + item.title + "</a></div>";
+                    s += '<li><div class="col-4 col recent-posts"><a href="' + item.link + '" target="' + def.TitleLinkTarget + '">';
 
                     if (def.ShowPubDate){
                         dt= new Date(item.publishedDate);
@@ -46,11 +46,11 @@
                             s += '<div class="itemContent">' + item.content.substr(0, def.DescCharacterLimit) + "...</div>";
                         }
                         else {
-                            s += '<div class="itemContent">' + item.content + "</div>";
+                            s += '<div class="itemContainer"><div class="itemContent">' + item.content + "</div></div>";
                         }
                     }
 
-                    s += '</div></li>';
+                    s += '<div class="itemTitle">' + item.title + '</div></a></div></li>';
                 });
                 $("#" + id).append('<ul class="feedEkList">' + s + "</ul>");
             }
