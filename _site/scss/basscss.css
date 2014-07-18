@@ -684,7 +684,7 @@ h6, .h6, small {
 
 body {
   color: #333333;
-  background-color: #999; }
+  background-color: #000; }
 
 a {
   color: #0096cc;
@@ -707,7 +707,7 @@ a {
   margin-left: -50px; }
 
 .itemContainer {
-  padding-bottom: 56.25%;
+  padding-bottom: 66.25%;
   padding-top: 30px;
   height: 0;
   overflow: hidden; }
@@ -715,6 +715,11 @@ a {
 .itemContent img {
   width: 100%;
   height: auto; }
+
+.itemTitle {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #333333; }
 
 .itemContent p {
   display: none; }
