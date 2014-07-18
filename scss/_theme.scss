@@ -23,67 +23,17 @@ a {
 
 // RSS Feed
 
-.recent-posts {
-  margin-left: -2.7%;
-  margin-right: -5.1%;
+.feedEkList {
+  list-style: none;
+  margin-left: -30px;
 }
 
-.rssincl-entry {
-  float: left;
-  overflow: hidden;
-  width: 30%;
-  padding: 1rem;
-}
-
-.rssincl-itemimage {
+.itemContent img {
   width: 100%;
-  height: 250px;
-  overflow: hidden;
-}
-
-.rssincl-itemimage img {
-  width: 110%;
   height: auto;
 }
 
-.rssincl-itemtitle {
-  text-align: center;
-}
-
-//Mobile Styles
-@media screen and (min-width: 720px) and (max-width: 1152px) {
-
-.rssincl-itemimage img {
-
-  max-height: 264px;
-}
-.rssincl-entry {
-  width: 29%;
-  padding-right: 1.5%;
-}
-
-.recent-posts {
-  margin-right: 0;
-  margin-left: 1.3%;
-}
-
-}
-
-//Mobile Styles
-@media screen and (max-width: $breakpoint-mobile) {
-
-.rssincl-entry {
-  float: initial;
-  width: 90%;
-  padding: 5%;
-}
-
-.recent-posts {
-  margin: 0;
-}
-
-.rssincl-itemimage {
-  height: 180px;
-}
+.itemContent p {
+  display: none;
 }
 

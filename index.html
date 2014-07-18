@@ -31,10 +31,10 @@ $('.bxslider').bxSlider({
 $(document).ready(function () {
 $('#divRss').FeedEk({
     FeedUrl : 'http://www.singlesclub.fm/blog/feed/',
-    MaxCount : 5,
+    MaxCount : 3,
     ShowDesc : true,
-    ShowPubDate:true,
-    DescCharacterLimit:100,
+    ShowPubDate: false,
+    DescCharacterLimit:0,
     TitleLinkTarget:'_blank'
   });
  });
@@ -68,9 +68,6 @@ $('#divRss').FeedEk({
           A subscription record club & digital music journal published quarterly.
         </div>
     </div>
-    <div id="divRss"></div>
-  </div>
-
 <div class="container px2">
   <div class="row">
       <ul class="bxslider full-width">
@@ -88,6 +85,9 @@ $('#divRss').FeedEk({
       </div>
     </div>
   </div>
+      <div class="container">
+      <div class="center" id="divRss"></div>
+    </div>
 </div>
 
 

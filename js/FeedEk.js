@@ -1,16 +1,16 @@
 /*
 * FeedEk jQuery RSS/ATOM Feed Plugin v2.0
 * http://jquery-plugins.net/FeedEk/FeedEk.html  https://github.com/enginkizil/FeedEk
-* Author : Engin KIZIL http://www.enginkizil.com   
+* Author : Engin KIZIL http://www.enginkizil.com
 */
 
 (function ($) {
     $.fn.FeedEk = function (opt) {
         var def = $.extend({
             FeedUrl: "http://rss.cnn.com/rss/edition.rss",
-            MaxCount: 5,
-            ShowDesc: true,
-            ShowPubDate: true,
+            MaxCount: 3,
+            ShowDesc: false,
+            ShowPubDate: false,
             CharacterLimit: 0,
             TitleLinkTarget: "_blank",
             DateFormat: "",
@@ -26,8 +26,8 @@
             success: function (data) {
                 $("#" + id).empty();
                 $.each(data.responseData.feed.entries, function (e, item) {
-                    s += '<li><div class="itemTitle"><a href="' + item.link + '" target="' + def.TitleLinkTarget + '" >' + item.title + "</a></div>";
-                    
+                    s += '<li><div class="col col-4 recent-posts"><div class="itemTitle"><a href="' + item.link + '" target="' + def.TitleLinkTarget + '" >' + item.title + "</a></div>";
+
                     if (def.ShowPubDate){
                         dt= new Date(item.publishedDate);
                         if ($.trim(def.DateFormat).length > 0) {
@@ -35,11 +35,11 @@
                                 moment.lang(def.DateFormatLang);
                                 s += '<div class="itemDate">' + moment(dt).format(def.DateFormat) + "</div>";
                             }
-                            catch (e){s += '<div class="itemDate">' + dt.toLocaleDateString() + "</div>";}                            
+                            catch (e){s += '<div class="itemDate">' + dt.toLocaleDateString() + "</div>";}
                         }
                         else {
                             s += '<div class="itemDate">' + dt.toLocaleDateString() + "</div>";
-                        }                        
+                        }
                     }
                     if (def.ShowDesc) {
                         if (def.DescCharacterLimit > 0 && item.content.length > def.DescCharacterLimit) {
@@ -49,6 +49,8 @@
                             s += '<div class="itemContent">' + item.content + "</div>";
                         }
                     }
+
+                    s += '</div></li>';
                 });
                 $("#" + id).append('<ul class="feedEkList">' + s + "</ul>");
             }
