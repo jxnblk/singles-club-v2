@@ -207,6 +207,18 @@ h6, .h6, small {
   padding-top: 4rem;
   padding-bottom: 4rem; }
 
+.pt1 {
+  padding-top: 0.5rem; }
+
+.pt2 {
+  padding-top: 1rem; }
+
+.pt3 {
+  padding-top: 2rem; }
+
+.pt4 {
+  padding-top: 4rem; }
+
 .inline {
   display: inline; }
 
@@ -358,6 +370,21 @@ h6, .h6, small {
   margin: auto;
   display: table; }
 
+.rotate {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  /* Should be unset in IE9+ I think. */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); }
+
 .table-reset {
   border-collapse: collapse;
   border-spacing: 0;
@@ -404,7 +431,7 @@ h6, .h6, small {
   min-height: 1.75rem; }
 
 .container {
-  max-width: 75rem;
+  max-width: 70rem;
   margin-right: auto;
   margin-left: auto; }
 
@@ -536,17 +563,17 @@ h6, .h6, small {
     margin-left: 91.66667%; }
 
   .container-col-10 {
-    max-width: 62.16667rem;
+    max-width: 58rem;
     margin-right: auto;
     margin-left: auto; }
 
   .container-col-8 {
-    max-width: 49.33333rem;
+    max-width: 46rem;
     margin-right: auto;
     margin-left: auto; }
 
   .container-col-6 {
-    max-width: 36.5rem;
+    max-width: 34rem;
     margin-right: auto;
     margin-left: auto; } }
 .mobile-table {
@@ -609,6 +636,9 @@ h6, .h6, small {
 .nav-flush {
   margin-right: -0.75rem;
   margin-left: -0.75rem; }
+
+.nav-mark {
+  width: 30px; }
 
 .site-wrapper {
   position: relative;

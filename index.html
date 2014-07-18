@@ -4,30 +4,75 @@ description: "Part record club. Part music journal."
 ---
 {% include head.html %}
 
+<!-- jQuery library (served from Google) -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="/js/jquery.bxslider.min.js"></script>
+<script src="/js/js.js"></script>
+<!-- bxSlider CSS file -->
+<link href="/../lib/jquery.bxslider.css" rel="stylesheet" />
+
 <body>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+$('.bxslider').bxSlider({
+  auto: true,
+  // autoControls: true
+  controls: false,
+  pagerCustom: '#bx-pager'
+});
+  });
+</script>
+
   <div data-component="navbar" class="main-nav clearfix white bg-dark-gray py2 px2">
     <div class="left">
       <div class="nav mobile-nav-table caps">
-        <a href="#">Issues</a>
-        <a href="#">Shop</a>
-        <a href="#">About</a>
-        <a href="#">Blog</a>
+        <span class="nav-item full-width nav-mark pt1 px2">
+          <img src="images/sc.svg">
+        </span>
+          <a href="#" class="mobile-hide">Issues</a>
+          <a href="#" class="mobile-hide">Shop</a>
+          <a href="#" class="mobile-hide">About</a>
+          <a href="#" class="mobile-hide">Blog</a>
       </div>
     </div>
     <div class="right">
       <div class="nav mobile-nav-table">
-        <span class="nav-item h4 white">
+        <span class="nav-item h4 white pt1">
           Part record club. Part music journal.
         </span>
       </div>
     </div>
   </div>
+
   <div class="container">
-    <div class="row center">
-      <div class="h2">
-        A subscription record club & digital music journal published quarterly.
-      </div>
+    <div class="center py3">
+        <div class="h2">
+          A subscription record club & digital music journal published quarterly.
+        </div>
     </div>
   </div>
 
+<div class="container px2">
+  <div class="row">
+      <ul class="bxslider full-width">
+        <li><img src="/images/1.jpg" /></li>
+        <li><img src="/images/2.jpg" /></li>
+        <li><img src="/images/3.jpg" /></li>
+      </ul>
+  </div>
+  <div class="row">
+    <div class="right bg-dark-gray">
+      <div id="bx-pager">
+        <a data-slide-index="0" href="" class="px1">1</a>
+        <a data-slide-index="1" href="" class="px1">2</a>
+        <a data-slide-index="2" href="" class="px1">3</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
+
