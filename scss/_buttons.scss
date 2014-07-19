@@ -4,6 +4,7 @@
   font-family: inherit;
   font-weight: bold;
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   border: none;
   -webkit-appearance: none;
@@ -13,7 +14,8 @@
   line-height: $ui-height;
   height: auto;
   min-height: $ui-height;
-  padding: 0 $ui-padding;
+  padding-top: $ui-padding;
+  padding-bottom: $ui-padding;
   &:hover,
   &:focus {
     text-decoration: none;

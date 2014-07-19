@@ -30,3 +30,14 @@
   &:focus {}
 }
 
+.button-red {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: $red;
+  &:hover {
+    color: #fff;
+    background-color: darken($red, 20%);
+  }
+  &:focus {}
+}
+

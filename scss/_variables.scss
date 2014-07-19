@@ -4,12 +4,12 @@
 $space: 1rem !default;
 
 // Typography
-$font-family: 'Helvetica Neue', Helvetica, sans-serif !default;
+$font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $line-height: 1.5 !default;
 $line-height-heading: 1.25 !default;
 
 // Type Scale
-$h1: 2rem !default;
+$h1: 2.5rem !default;
 $h2: 1.5rem !default;
 $h3: 1.25rem !default;
 $h4: 1rem !default;
@@ -47,7 +47,7 @@ $light-gray: #eee !default;
 $mid-gray: #777 !default;
 $dark-gray: #333 !default;
 
-$red: #f96010 !default;
+$red: #FF0033 !default;
 $green: #11e966 !default;
 $yellow: #ffdc00 !default;
 
@@ -59,5 +59,5 @@ $darken-3: rgba(#000,.375) !default;
 // Borders
 $border-color: #ccc !default;
 $border-width: 1px !default;
-$border-radius: .25rem !default;
+$border-radius: 0 !default;
 

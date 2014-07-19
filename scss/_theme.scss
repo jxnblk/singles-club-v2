@@ -57,15 +57,36 @@ a {
   height: 300px;
 }
 
+.recent-posts {
+  box-sizing: border-box;
+  padding-right: 0;
+  padding-left: 0;
+  border-right-style: solid;
+  border-width: 2px;
+  border-color: #000;
+}
+
+
+.issue-label {
+  float: right;
+  margin-left: -$grid-gutter/2;
+  overflow: hidden;
+}
+
+.featured-content  {
+  .border {
+    border-width: 2px;
+    border-color: $dark-gray;
+  }
+}
+
 // Mobile Styling
 @media screen and (max-width: $breakpoint-mobile) {
-  .recent-posts {
-    box-sizing: border-box;
-    padding-right: 0;
-    padding-left: 0;
-  }
-
   .rss-feed-spacer {
     display: none;
   }
+
+.issue-label {
+  float: none;
+}
  }
