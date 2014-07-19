@@ -53,11 +53,19 @@ a {
   display: none;
 }
 
+.rss-feed-spacer {
+  height: 300px;
+}
+
 // Mobile Styling
 @media screen and (max-width: $breakpoint-mobile) {
   .recent-posts {
     box-sizing: border-box;
     padding-right: 0;
     padding-left: 0;
+  }
+
+  .rss-feed-spacer {
+    display: none;
   }
  }

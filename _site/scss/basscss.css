@@ -724,11 +724,17 @@ a {
 .itemContent p {
   display: none; }
 
+.rss-feed-spacer {
+  height: 300px; }
+
 @media screen and (max-width: 768px) {
   .recent-posts {
     box-sizing: border-box;
     padding-right: 0;
-    padding-left: 0; } }
+    padding-left: 0; }
+
+  .rss-feed-spacer {
+    display: none; } }
 .white {
   color: #fff; }
 
