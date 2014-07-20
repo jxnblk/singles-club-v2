@@ -1,8 +1,9 @@
 // Buttons
 
 .button {
-  font-family: inherit;
-  font-weight: bold;
+  font-family: 'Apercu Medium', 'Helvetica-Medium', sans-serif;
+  font-weight: 600;
+  font-style: normal;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
@@ -16,6 +17,7 @@
   min-height: $ui-height;
   padding-top: $ui-padding;
   padding-bottom: $ui-padding;
+  letter-spacing: $ls05;
   &:hover,
   &:focus {
     text-decoration: none;
@@ -32,4 +34,3 @@
   line-height: $ui-height-small;
   min-height: $ui-height-small;
 }
-

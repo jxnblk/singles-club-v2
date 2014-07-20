@@ -6,10 +6,10 @@ body {
 }
 
 a {
-  color: $blue;
+  color: #fff;
   text-decoration: none;
   &:hover {
-    color: darken($blue, 10%);
+    color: darken($red, 10%);
     text-decoration: underline;
   }
 }
@@ -86,11 +86,25 @@ a {
 .issue-meta {
   padding-right: 0rem;
   padding-left: 0rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.6rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.65rem;
   height: auto;
 
 }
+
+//Subscription
+
+.subscription {
+  background: url(../images/subscription.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .logo {
+    width: 150px;
+  }
+}
+
 
 // Mobile Styling
 @media screen and (max-width: $breakpoint-mobile) {
@@ -101,4 +115,8 @@ a {
   .featured-content {
     height: auto;
   }
-   }
+
+  .subscription {
+    background: none;
+  }
+}

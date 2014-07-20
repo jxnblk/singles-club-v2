@@ -41,7 +41,7 @@ h2, .h2 {
   font-size: 2rem; }
 
 h3, .h3 {
-  font-size: 1.5rem; }
+  font-size: 1.25rem; }
 
 h4, .h4,
 p, dl, ol, ul {
@@ -55,7 +55,7 @@ h6, .h6, small {
 
 @media screen and (min-width: 48em) {
   .h1 {
-    font-size: 4.5rem; }
+    font-size: 3.5rem; }
 
   .h2 {
     font-size: 2rem; }
@@ -70,7 +70,10 @@ h6, .h6, small {
     font-size: 0.875rem; }
 
   .h6 {
-    font-size: 0.875rem; } }
+    font-size: 0.875rem; }
+
+  p {
+    font-size: 1.125rem; } }
 .bold {
   font-weight: bold; }
 
@@ -111,30 +114,35 @@ h6, .h6, small {
   line-height: 1.5; }
 
 .ls-1 {
-  letter-spacing: -.1em; }
+  letter-spacing: -0.1em; }
 
 .ls05 {
-  letter-spacing: .05em; }
+  letter-spacing: 0.05em; }
 
 .ls1 {
-  letter-spacing: .1em; }
+  letter-spacing: 0.1em; }
 
 .ls1-05 {
-  letter-spacing: .105; }
+  letter-spacing: 0.105; }
 
 .ls2 {
-  letter-spacing: .2em; }
+  letter-spacing: 0.2em; }
 
 .ls3 {
-  letter-spacing: .3em; }
+  letter-spacing: 0.3em; }
 
 body {
-  font-family: 'Apercu Light', 'Helvetica-Light', sans-serif;
-  font-weight: 200;
-  font-style: normal;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
   line-height: 1.75rem;
+  letter-spacing: 0.05em;
   -webkit-text-size-adjust: none;
   text-size-adjust: none; }
+
+.helvetica {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: normal;
+  font-style: normal; }
 
 .apercu {
   font-family: 'Apercu Regular', 'Helvetica', sans-serif;
@@ -286,6 +294,28 @@ body {
 .py4 {
   padding-top: 4rem;
   padding-bottom: 4rem; }
+
+.p5 {
+  padding: 5rem; }
+
+.px5 {
+  padding-right: 5rem;
+  padding-left: 5rem; }
+
+.py5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+
+.p6 {
+  padding: 6rem; }
+
+.px6 {
+  padding-right: 6rem;
+  padding-left: 6rem; }
+
+.py6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem; }
 
 .pt1 {
   padding-top: 0.5rem; }
@@ -516,8 +546,9 @@ body {
   line-height: 1.75rem; }
 
 .button {
-  font-family: inherit;
-  font-weight: bold;
+  font-family: 'Apercu Medium', 'Helvetica-Medium', sans-serif;
+  font-weight: 600;
+  font-style: normal;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
@@ -530,7 +561,8 @@ body {
   height: auto;
   min-height: 2.25rem;
   padding-top: 0.75rem;
-  padding-bottom: 0.75rem; }
+  padding-bottom: 0.75rem;
+  letter-spacing: 0.05em; }
   .button:hover, .button:focus {
     text-decoration: none; }
 
@@ -1006,10 +1038,10 @@ body {
   background-color: #000; }
 
 a {
-  color: #0096cc;
+  color: #fff;
   text-decoration: none; }
   a:hover {
-    color: #007199;
+    color: #cc0029;
     text-decoration: underline; }
 
 .main-nav {
@@ -1067,16 +1099,28 @@ a {
 .issue-meta {
   padding-right: 0rem;
   padding-left: 0rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.6rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.65rem;
   height: auto; }
+
+.subscription {
+  background: url(../images/subscription.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .subscription .logo {
+    width: 150px; }
 
 @media screen and (max-width: 768px) {
   .rss-feed-spacer {
     display: none; }
 
   .featured-content {
-    height: auto; } }
+    height: auto; }
+
+  .subscription {
+    background: none; } }
 .white {
   color: #fff; }
 
@@ -1104,6 +1148,9 @@ a {
 .off-black {
   color: #111111; }
 
+.off-white {
+  color: #e3e3e3; }
+
 .bg-white {
   background-color: #fff; }
 
@@ -1130,6 +1177,9 @@ a {
 
 .bg-off-black {
   background-color: #111111; }
+
+.bg-off-white {
+  background-color: #e3e3e3; }
 
 .border {
   border-style: solid;

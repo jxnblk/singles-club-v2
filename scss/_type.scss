@@ -29,6 +29,7 @@ h6, .h6, small { font-size: $h6; }
     .h4 { font-size: $desktop-h4; }
     .h5 { font-size: $desktop-h5; }
     .h6 { font-size: $desktop-h6; }
+    p {font-size: $desktop-h4; }
   }
 }
 
@@ -59,27 +60,33 @@ h6, .h6, small { font-size: $h6; }
 
 //line height
 
-.lh1 { line-height: 1; }
-.lh2 { line-height: 1.25; }
-.lh3 { line-height: 1.5 }
+.lh1 { line-height: $lh1; }
+.lh2 { line-height: $lh2; }
+.lh3 { line-height: $lh3; }
 
 // Letter Spacing
 
-.ls-1 { letter-spacing: -.1em; }
-.ls05 { letter-spacing: .05em;}
-.ls1 { letter-spacing: .1em;}
-.ls1-05 { letter-spacing: .105;}
-.ls2 { letter-spacing: .2em;}
-.ls3 { letter-spacing: .3em;}
+.ls-1 { letter-spacing: $ls-1; }
+.ls05 { letter-spacing: $ls05;}
+.ls1 { letter-spacing: $ls1;}
+.ls1-05 { letter-spacing: $ls1-05; }
+.ls2 { letter-spacing: $ls2; }
+.ls3 { letter-spacing: $ls3; }
 
 //Typefaces
 body {
-  font-family: 'Apercu Light', 'Helvetica-Light', sans-serif;
-  font-weight: 200;
-  font-style: normal;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
   line-height: 1.75rem;
+  letter-spacing: $ls05;
   -webkit-text-size-adjust: none;
           text-size-adjust: none;
+}
+
+.helvetica {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .apercu {
