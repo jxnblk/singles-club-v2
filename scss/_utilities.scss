@@ -8,6 +8,10 @@
 .left  { float: left; }
 .right { float: right; }
 
+.flush {
+  margin-bottom: -0.4rem;
+}
+
 .clearfix {
   &:before, &:after { content: " "; display: table; }
   &:after { clear: both; }

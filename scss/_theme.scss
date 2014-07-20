@@ -63,9 +63,10 @@ a {
   padding-left: 0;
   border-right-style: solid;
   border-width: 2px;
-  border-color: #000;
+  border-color: $off-black;
 }
 
+// Featured Issue
 
 .issue-label {
   float: right;
@@ -78,6 +79,17 @@ a {
     border-width: 2px;
     border-color: $dark-gray;
   }
+}
+
+//Issues
+
+.issue-meta {
+  padding-right: 0rem;
+  padding-left: 0rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.6rem;
+  height: auto;
+
 }
 
 // Mobile Styling
