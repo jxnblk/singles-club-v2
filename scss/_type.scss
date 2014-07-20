@@ -1,10 +1,10 @@
 // Type
 
-body {
-  font-family: $font-family;
-  line-height: $line-height;
-  font-weight: 400;
-}
+// body {
+//   font-family: $font-family;
+//   line-height: $line-height;
+//   font-weight: 400;
+// }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: $line-height-heading;
@@ -38,12 +38,94 @@ h6, .h6, small { font-size: $h6; }
 .italic  { font-style: italic; }
 .caps    { text-transform: uppercase; letter-spacing: .2em; }
 
+// Prevent flashing fonts with fontdeck
+// The recommended method flashes the entire body - not sure what the psychological
+// impact of perceived load time is, but my guess is not that much better.
+// Instead this method only hides elements styled with the fonts that are loading
+//.wf-loading body {
+.wf-loading {
+  .apercu,
+  .apercu-medium,
+  .apercu-bold {
+    visibility: hidden;
+  }
+}
+
 // Alignment
 .left-align   { text-align: left; }
 .center       { text-align: center; }
 .right-align  { text-align: right; }
 .justified    { text-align: justify; }
 
+//line height
+
+.lh1 { line-height: 1; }
+.lh2 { line-height: 1.25; }
+.lh3 { line-height: 1.5 }
+
+// Letter Spacing
+
+.ls-1 { letter-spacing: -.1em; }
+.ls05 { letter-spacing: .05em;}
+.ls1 { letter-spacing: .1em;}
+.ls1-05 { letter-spacing: .105;}
+.ls2 { letter-spacing: .2em;}
+.ls3 { letter-spacing: .3em;}
 
 //Typefaces
+body {
+  font-family: 'Apercu Light', 'Helvetica-Light', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 1.75rem;
+  -webkit-text-size-adjust: none;
+          text-size-adjust: none;
+}
 
+.apercu {
+  font-family: 'Apercu Regular', 'Helvetica', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.apercu-light {
+  font-family: 'Apercu Light', 'Helvetica-Light', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.apercu-medium {
+  font-family: 'Apercu Medium', 'Helvetica-Medium', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.apercu-bold {
+  font-family: 'Apercu Bold', 'Helvetica-Bold', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.lydian-italic {
+  font-family: LydianBT-Italic, georgia;
+  font-weight: lighter;
+}
+
+.lydian {
+  font-family: LydianBT-Roman, georgia;
+  font-weight: normal;
+}
+
+.lydian-bold {
+  font-family: LydianBT-Bold, georgia;
+  font-weight: normal;
+}
+
+// Uncomment this to switch to Georgia on paragraphs
+// p,
+
+.serif {
+  font-family: Georgia, serif;
+  font-size: 19px;
+  -webkit-font-smoothing: antialiased;
+}

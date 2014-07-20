@@ -70,11 +70,11 @@ a {
 
 .issue-label {
   float: right;
-  margin-left: -$grid-gutter/2;
   overflow: hidden;
 }
 
 .featured-content  {
+  height: 434px;
   .border {
     border-width: 2px;
     border-color: $dark-gray;
@@ -86,7 +86,7 @@ a {
 .issue-meta {
   padding-right: 0rem;
   padding-left: 0rem;
-  padding-top: 0.7rem;
+  padding-top: 0.5rem;
   padding-bottom: 0.6rem;
   height: auto;
 
@@ -98,7 +98,7 @@ a {
     display: none;
   }
 
-.issue-label {
-  float: none;
-}
- }
+  .featured-content {
+    height: auto;
+  }
+   }

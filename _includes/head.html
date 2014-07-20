@@ -10,4 +10,27 @@
   <link rel="icon" href="/favicon.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link href="/../scss/basscss.css" rel="stylesheet" />
+
+  <style>
+  <!-- the .wf-loading class is used to control FOUT (flash of unstyled text) -->
+  html { transition: opacity .2s ease; }
+  .wf-loading { opacity: 0; }
+</style>
+<script type="text/javascript">
+  var html = document.getElementsByTagName('html')[0];
+  html.className += '  wf-loading';
+  setTimeout(function() {
+    html.className = html.className.replace(' wf-loading', '');
+  }, 5000);
+  WebFontConfig = { fontdeck: { id: '39874' } };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script>
+
 </head>

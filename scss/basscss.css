@@ -30,17 +30,12 @@ h1, h2, h3, h4, h5, h6, p {
   margin-top: 0;
   margin-bottom: 0; }
 
-body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  line-height: 1.5;
-  font-weight: 400; }
-
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
   font-weight: 300; }
 
 h1, .h1 {
-  font-size: 4rem; }
+  font-size: 2.5rem; }
 
 h2, .h2 {
   font-size: 2rem; }
@@ -50,7 +45,7 @@ h3, .h3 {
 
 h4, .h4,
 p, dl, ol, ul {
-  font-size: 1.125rem; }
+  font-size: 1rem; }
 
 h5, .h5 {
   font-size: 0.875rem; }
@@ -60,7 +55,7 @@ h6, .h6, small {
 
 @media screen and (min-width: 48em) {
   .h1 {
-    font-size: 4rem; }
+    font-size: 4.5rem; }
 
   .h2 {
     font-size: 2rem; }
@@ -89,6 +84,11 @@ h6, .h6, small {
   text-transform: uppercase;
   letter-spacing: .2em; }
 
+.wf-loading .apercu,
+.wf-loading .apercu-medium,
+.wf-loading .apercu-bold {
+  visibility: hidden; }
+
 .left-align {
   text-align: left; }
 
@@ -100,6 +100,78 @@ h6, .h6, small {
 
 .justified {
   text-align: justify; }
+
+.lh1 {
+  line-height: 1; }
+
+.lh2 {
+  line-height: 1.25; }
+
+.lh3 {
+  line-height: 1.5; }
+
+.ls-1 {
+  letter-spacing: -.1em; }
+
+.ls05 {
+  letter-spacing: .05em; }
+
+.ls1 {
+  letter-spacing: .1em; }
+
+.ls1-05 {
+  letter-spacing: .105; }
+
+.ls2 {
+  letter-spacing: .2em; }
+
+.ls3 {
+  letter-spacing: .3em; }
+
+body {
+  font-family: 'Apercu Light', 'Helvetica-Light', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 1.75rem;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none; }
+
+.apercu {
+  font-family: 'Apercu Regular', 'Helvetica', sans-serif;
+  font-weight: normal;
+  font-style: normal; }
+
+.apercu-light {
+  font-family: 'Apercu Light', 'Helvetica-Light', sans-serif;
+  font-weight: 200;
+  font-style: normal; }
+
+.apercu-medium {
+  font-family: 'Apercu Medium', 'Helvetica-Medium', sans-serif;
+  font-weight: 600;
+  font-style: normal; }
+
+.apercu-bold {
+  font-family: 'Apercu Bold', 'Helvetica-Bold', sans-serif;
+  font-weight: bold;
+  font-style: normal; }
+
+.lydian-italic {
+  font-family: LydianBT-Italic, georgia;
+  font-weight: lighter; }
+
+.lydian {
+  font-family: LydianBT-Roman, georgia;
+  font-weight: normal; }
+
+.lydian-bold {
+  font-family: LydianBT-Bold, georgia;
+  font-weight: normal; }
+
+.serif {
+  font-family: Georgia, serif;
+  font-size: 19px;
+  -webkit-font-smoothing: antialiased; }
 
 .m0 {
   margin: 0; }
@@ -251,6 +323,10 @@ h6, .h6, small {
 .pb6 {
   padding-bottom: 8rem; }
 
+@media screen and (max-width: 768px) {
+  .m-px10 {
+    padding-left: 10%;
+    padding-right: 10%; } }
 .inline {
   display: inline; }
 
@@ -270,7 +346,7 @@ h6, .h6, small {
   float: right; }
 
 .flush {
-  margin-bottom: -0.4rem; }
+  margin-bottom: -0.6rem; }
 
 .clearfix:before, .clearfix:after {
   content: " ";
@@ -710,6 +786,221 @@ h6, .h6, small {
   -webkit-transform: translateX(300px);
   transform: translateX(300px); }
 
+@font-face {
+  font-family: 'LydianBT-Italic';
+  src: url("../fonts/lydian-italic.eot");
+  src: url("../fonts/lydian-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/lydian-italic.woff") format("woff"), url("../fonts/lydian-italic.ttf") format("truetype"), url("../fonts/lydian-italic.svg#wf") format("svg"); }
+@font-face {
+  font-family: 'LydianBT-Roman';
+  src: url("../fonts/lydian.eot");
+  src: url("../fonts/lydian.eot?#iefix") format("embedded-opentype"), url("../fonts/lydian.woff") format("woff"), url("../fonts/lydian.ttf") format("truetype"); }
+@font-face {
+  font-family: 'LydianBT-Bold';
+  src: url("../fonts/lydian-bold.eot");
+  src: url("../fonts/lydian-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/lydian-bold.woff") format("woff"), url("../fonts/lydian-bold.ttf") format("truetype"); }
+/*
+* Symbolset
+* www.symbolset.com
+* Copyright © 2013 Oak Studios LLC
+*
+* Upload this file to your web server
+* and place this within your <head> tags.
+* <link href="webfonts/ss-social-regular.css" rel="stylesheet" />
+*/
+@font-face {
+  font-family: "SSSocialRegular";
+  src: url("../fonts/ss-social-regular.eot");
+  src: url("../fonts/ss-social-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ss-social-regular.woff") format("woff"), url("../fonts/ss-social-regular.ttf") format("truetype"), url("../fonts/ss-social-regular.svg#SSSocialRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* This triggers a redraw in IE to Fix IE8's :before content rendering. */
+html:hover [class^="ss-"] {
+  -ms-zoom: 1; }
+
+.ss-icon, .ss-icon.ss-social-regular,
+[class^="ss-"]:before, [class*=" ss-"]:before,
+[class^="ss-"].ss-social-regular:before, [class*=" ss-"].ss-social-regular:before,
+[class^="ss-"].right:after, [class*=" ss-"].right:after,
+[class^="ss-"].ss-social-regular.right:after, [class*=" ss-"].ss-social-regular.right:after {
+  font-family: "SSSocialRegular";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased; }
+
+[class^="ss-"].right:before,
+[class*=" ss-"].right:before {
+  display: none;
+  content: ''; }
+
+.ss-facebook:before, .ss-facebook.right:after {
+  content: ''; }
+
+.ss-twitter:before, .ss-twitter.right:after {
+  content: ''; }
+
+.ss-linkedin:before, .ss-linkedin.right:after {
+  content: ''; }
+
+.ss-googleplus:before, .ss-googleplus.right:after {
+  content: ''; }
+
+.ss-appdotnet:before, .ss-appdotnet.right:after {
+  content: ''; }
+
+.ss-zerply:before, .ss-zerply.right:after {
+  content: ''; }
+
+.ss-reddit:before, .ss-reddit.right:after {
+  content: ''; }
+
+.ss-steam:before, .ss-steam.right:after {
+  content: ''; }
+
+.ss-tumblr:before, .ss-tumblr.right:after {
+  content: ''; }
+
+.ss-wordpress:before, .ss-wordpress.right:after {
+  content: ''; }
+
+.ss-blogger:before, .ss-blogger.right:after {
+  content: ''; }
+
+.ss-posterous:before, .ss-posterous.right:after {
+  content: ''; }
+
+.ss-quora:before, .ss-quora.right:after {
+  content: ''; }
+
+.ss-youtube:before, .ss-youtube.right:after {
+  content: ''; }
+
+.ss-vimeo:before, .ss-vimeo.right:after {
+  content: ''; }
+
+.ss-vine:before, .ss-vine.right:after {
+  content: ''; }
+
+.ss-letterboxd:before, .ss-letterboxd.right:after {
+  content: ''; }
+
+.ss-flickr:before, .ss-flickr.right:after {
+  content: ''; }
+
+.ss-instagram:before, .ss-instagram.right:after {
+  content: ''; }
+
+.ss-500px:before, .ss-500px.right:after {
+  content: ''; }
+
+.ss-etsy:before, .ss-etsy.right:after {
+  content: ''; }
+
+.ss-pinterest:before, .ss-pinterest.right:after {
+  content: ''; }
+
+.ss-svpply:before, .ss-svpply.right:after {
+  content: ''; }
+
+.ss-readmill:before, .ss-readmill.right:after {
+  content: ''; }
+
+.ss-dropbox:before, .ss-dropbox.right:after {
+  content: ''; }
+
+.ss-pinboard:before, .ss-pinboard.right:after {
+  content: ''; }
+
+.ss-delicious:before, .ss-delicious.right:after {
+  content: ''; }
+
+.ss-dribbble:before, .ss-dribbble.right:after {
+  content: ''; }
+
+.ss-behance:before, .ss-behance.right:after {
+  content: ''; }
+
+.ss-github:before, .ss-github.right:after {
+  content: ''; }
+
+.ss-octocat:before, .ss-octocat.right:after {
+  content: ''; }
+
+.ss-stackoverflow:before, .ss-stackoverflow.right:after {
+  content: ''; }
+
+.ss-paypal:before, .ss-paypal.right:after {
+  content: ''; }
+
+.ss-kickstarter:before, .ss-kickstarter.right:after {
+  content: ''; }
+
+.ss-foursquare:before, .ss-foursquare.right:after {
+  content: ''; }
+
+.ss-yelp:before, .ss-yelp.right:after {
+  content: ''; }
+
+.ss-skype:before, .ss-skype.right:after {
+  content: ''; }
+
+.ss-rdio:before, .ss-rdio.right:after {
+  content: ''; }
+
+.ss-spotify:before, .ss-spotify.right:after {
+  content: ''; }
+
+.ss-lastfm:before, .ss-lastfm.right:after {
+  content: ''; }
+
+.ss-soundcloud:before, .ss-soundcloud.right:after {
+  content: ''; }
+
+.ss-link:before, .ss-link.right:after {
+  content: '🔗'; }
+
+.ss-phone:before, .ss-phone.right:after {
+  content: '📞'; }
+
+.ss-mail:before, .ss-mail.right:after {
+  content: '✉'; }
+
+.ss-like:before, .ss-like.right:after {
+  content: '👍'; }
+
+.ss-rss:before, .ss-rss.right:after {
+  content: ''; }
+
+.ss-share:before, .ss-share.right:after {
+  content: ''; }
+
+.ss-apple:before, .ss-apple.right:after {
+  content: ''; }
+
+.ss-microsoft:before, .ss-microsoft.right:after {
+  content: ''; }
+
+.ss-windows:before, .ss-windows.right:after {
+  content: ''; }
+
+.ss-android:before, .ss-android.right:after {
+  content: ''; }
+
+.ss-blackberry:before, .ss-blackberry.right:after {
+  content: ''; }
+
+/* Legacy */
+.ss-fivehundredpx:before, .ss-fivehundredpx.right:after {
+  content: ''; }
+
 body {
   color: #333333;
   background-color: #000; }
@@ -765,17 +1056,18 @@ a {
 
 .issue-label {
   float: right;
-  margin-left: -1rem;
   overflow: hidden; }
 
-.featured-content .border {
-  border-width: 2px;
-  border-color: #333333; }
+.featured-content {
+  height: 434px; }
+  .featured-content .border {
+    border-width: 2px;
+    border-color: #333333; }
 
 .issue-meta {
   padding-right: 0rem;
   padding-left: 0rem;
-  padding-top: 0.7rem;
+  padding-top: 0.5rem;
   padding-bottom: 0.6rem;
   height: auto; }
 
@@ -783,8 +1075,8 @@ a {
   .rss-feed-spacer {
     display: none; }
 
-  .issue-label {
-    float: none; } }
+  .featured-content {
+    height: auto; } }
 .white {
   color: #fff; }
 
