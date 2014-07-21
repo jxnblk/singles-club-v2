@@ -24,6 +24,11 @@
   }
 }
 
+.form-button {
+  padding: .5*$ui-padding $ui-padding;
+  line-height: 0;
+}
+
 .button-big {
   line-height: $ui-height-big;
   min-height: $ui-height-big;

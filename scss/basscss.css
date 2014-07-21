@@ -353,6 +353,15 @@ body {
 .pb6 {
   padding-bottom: 8rem; }
 
+.pl1 {
+  padding-left: 0.5rem; }
+
+.pl2 {
+  padding-left: 1rem; }
+
+.pl3 {
+  padding-left: 2rem; }
+
 @media screen and (max-width: 768px) {
   .m-px10 {
     padding-left: 10%;
@@ -565,6 +574,10 @@ body {
   letter-spacing: 0.05em; }
   .button:hover, .button:focus {
     text-decoration: none; }
+
+.form-button {
+  padding: 0.375rem 0.75rem;
+  line-height: 0; }
 
 .button-big {
   line-height: 3rem;
@@ -1034,7 +1047,7 @@ html:hover [class^="ss-"] {
   content: ''; }
 
 body {
-  color: #333333;
+  color: #232323;
   background-color: #000; }
 
 a {
@@ -1047,7 +1060,7 @@ a {
 .main-nav {
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-color: #777777; }
+  border-color: #555555; }
 
 .rss-feed {
   padding-top: 30px;
@@ -1070,7 +1083,7 @@ a {
 .itemTitle {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #333333; }
+  background-color: #232323; }
 
 .itemContent p {
   display: none; }
@@ -1094,7 +1107,7 @@ a {
   height: 434px; }
   .featured-content .border {
     border-width: 2px;
-    border-color: #333333; }
+    border-color: #232323; }
 
 .issue-meta {
   padding-right: 0rem;
@@ -1102,6 +1115,14 @@ a {
   padding-top: 0.7rem;
   padding-bottom: 0.65rem;
   height: auto; }
+
+.archive {
+  margin-left: -2.5rem; }
+
+.archive li {
+  float: left;
+  display: inline;
+  padding-right: .5rem; }
 
 .subscription {
   background: url(../images/subscription.jpg) no-repeat center center;
@@ -1111,6 +1132,9 @@ a {
   background-size: cover; }
   .subscription .logo {
     width: 150px; }
+
+.mail-club h5 {
+  max-width: 300px; }
 
 @media screen and (max-width: 768px) {
   .rss-feed-spacer {
@@ -1125,10 +1149,10 @@ a {
   color: #fff; }
 
 .dark-gray {
-  color: #333333; }
+  color: #232323; }
 
 .mid-gray {
-  color: #777777; }
+  color: #555555; }
 
 .light-gray {
   color: #eeeeee; }
@@ -1155,10 +1179,10 @@ a {
   background-color: #fff; }
 
 .bg-dark-gray {
-  background-color: #333333; }
+  background-color: #232323; }
 
 .bg-mid-gray {
-  background-color: #777777; }
+  background-color: #555555; }
 
 .bg-light-gray {
   background-color: #eeeeee; }
@@ -1180,6 +1204,12 @@ a {
 
 .bg-off-white {
   background-color: #e3e3e3; }
+
+.link-dark-gray a {
+  color: #232323; }
+
+.link-mid-gray a {
+  color: #555555; }
 
 .border {
   border-style: solid;
@@ -1261,10 +1291,10 @@ a {
 
 .button-gray {
   color: #fff;
-  background-color: #777777; }
+  background-color: #555555; }
   .button-gray:hover {
     color: #fff;
-    background-color: #444444; }
+    background-color: #222222; }
 
 .button-red {
   color: #fff;
@@ -1286,9 +1316,9 @@ a {
   background-color: rgba(0, 0, 0, 0.375); }
 
 .nav-light > a {
-  color: #333333; }
+  color: #232323; }
   .nav-light > a:hover, .nav-light > a:focus {
-    color: #333333;
+    color: #232323;
     background-color: rgba(0, 0, 0, 0.125); }
 .nav-light .active {
   background-color: rgba(0, 0, 0, 0.25); }
@@ -1304,7 +1334,7 @@ a {
     .nav-borders > a:first-child {
       border-top: 0; }
   .nav-borders .active {
-    color: #333333; }
+    color: #232323; }
 
 .nav-pills > a {
   border-radius: 0; }
@@ -1335,9 +1365,9 @@ a {
     .nav-segments .active:hover, .nav-segments .active:focus {
       background-color: #007199; }
   .nav-segments .disabled {
-    color: rgba(51, 51, 51, 0.5); }
+    color: rgba(35, 35, 35, 0.5); }
     .nav-segments .disabled:hover, .nav-segments .disabled:focus {
-      color: rgba(51, 51, 51, 0.5);
+      color: rgba(35, 35, 35, 0.5);
       background-color: transparent; }
 
 .nav-tabs > a {
