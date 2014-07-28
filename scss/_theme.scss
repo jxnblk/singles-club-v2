@@ -10,8 +10,13 @@ a {
   text-decoration: none;
   &:hover {
     color: darken($red, 10%);
-    text-decoration: underline;
+    text-decoration: none;
   }
+}
+
+.nav-top {
+  padding-top: -40px;
+  padding-bottom: -40px;
 }
 
 .main-nav {
@@ -26,8 +31,7 @@ a {
 // RSS Feed
 
 .rss-feed {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-top: -45px;
 }
 
 .feedEkList {
@@ -55,9 +59,6 @@ a {
   display: none;
 }
 
-.rss-feed-spacer {
-  height: 300px;
-}
 
 .recent-posts {
   box-sizing: border-box;
@@ -115,6 +116,10 @@ a {
   .logo {
     width: 150px;
   }
+}
+
+.nav-logo {
+  max-width: 150px;
 }
 
 .mail-club h5 {
