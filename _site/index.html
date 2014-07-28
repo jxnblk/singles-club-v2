@@ -71,10 +71,9 @@ $('#divRss').FeedEk({
   });
  });
 </script>
-
   <div data-component="navbar" class="main-nav clearfix white bg-dark-gray py2 px2">
     <div class="left">
-      <div class="nav mobile-nav-table caps">
+      <div class="nav mobile-nav-table caps apercu">
         <span class="nav-item full-width nav-mark pt1 px2">
           <img src="images/sc.svg">
         </span>
@@ -86,12 +85,39 @@ $('#divRss').FeedEk({
     </div>
     <div class="right">
       <div class="nav mobile-nav-table">
-        <span class="nav-item h4 white pt1">
+        <span class="nav-item h4 white pt1 lydian caps">
           Part record club. Part music journal.
         </span>
       </div>
     </div>
   </div>
+<!--   <div class="table table-fixed nav-top bg-off-black">
+    <div class="table-cell col-4">
+      <div class="nav nav-table h4 caps white px2">
+        <a href="#!">Issues</a>
+        <a href="#!">Shop</a>
+        <a href="#!">About</a>
+        <a href="#!">Blog</a>
+      </div>
+    </div>
+    <div class="table-cell col-4">
+      <div class="center">
+        <img src="images/logo-hinted-white.svg" class="nav-logo"/>
+      </div>
+    </div>
+    <div class="table-cell col-4">
+      <div data-component="navbar" class="">
+        <div class="right">
+          <div class="nav nav-table">
+            <span class="nav-item h4 lydian caps ls05 white pt1 px2">
+              Part record club. Part music journal.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ -->
 
 <div class="bg-off-black py3">
   <div class="container oh">
@@ -99,7 +125,7 @@ $('#divRss').FeedEk({
       <h2>A subscription record club & digital music journal published quarterly.</h2>
     </div>
   </div>
-<div class="container oh">
+<div class="container oh pb3">
       <ul class="bxslider full-width">
         <li><img src="/images/1.jpg" /></li>
         <li><img src="/images/2.jpg" /></li>
@@ -115,8 +141,11 @@ $('#divRss').FeedEk({
 </div>
 
 <!--BLOG FEED-->
+<div class="white apercu px4 pb3 caps mobile-center">
+  <h3> The latest</h3>
+</div>
 
-<div class="container rss-feed oh m-px10">
+<div class="container oh m-px10 rss-feed">
   <div class="center" id="divRss">
   </div>
 </div>
@@ -125,6 +154,9 @@ $('#divRss').FeedEk({
 <!--ISSUES-->
 
 <div class="pt4">
+<div class="white apercu px4 pb3 caps mobile-center">
+  <h3>Issues</h3>
+</div>
   <div class="container clearfix white mb3 m-px10">
     <div class="left col-6">
       <img src="images/issue-smallsur.jpg" class="fit left">
@@ -201,6 +233,9 @@ $('#divRss').FeedEk({
   </div>
 </div>
 <div class="bg-off-white subscription oh py6 px4">
+<div class="dark-gray apercu-medium pb3 caps mobile-center">
+  <h3>Subscriptions</h3>
+</div>
     <div class="row">
       <div class="col col-offset-8 col-4">
         <div class="row mobile-center pb3">
@@ -229,7 +264,7 @@ $('#divRss').FeedEk({
 <div class="px4 py6">
   <div class="row white">
     <div class="mobile-col mobile-col-6 mail-club">
-      <h3> Mail Club</h3>
+      <h3 class="caps white apercu"> Mail Club</h3>
       <h5 class="pb2 pt1">Join our newsletter for new tunes, mix tapes, and features every month.</h5>
       <form class="form form-light">
         <label class="mr1" style="display:none;">Email:</label>

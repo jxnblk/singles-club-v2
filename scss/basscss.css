@@ -144,6 +144,12 @@ body {
   font-weight: normal;
   font-style: normal; }
 
+.helvetica-light {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  line-height: 1.75rem;
+  letter-spacing: 0.05em; }
+
 .apercu {
   font-family: 'Apercu Regular', 'Helvetica', sans-serif;
   font-weight: normal;
@@ -170,7 +176,8 @@ body {
 
 .lydian {
   font-family: LydianBT-Roman, georgia;
-  font-weight: normal; }
+  font-weight: normal;
+  letter-spacing: 0.1em; }
 
 .lydian-bold {
   font-family: LydianBT-Bold, georgia;
@@ -1055,7 +1062,11 @@ a {
   text-decoration: none; }
   a:hover {
     color: #cc0029;
-    text-decoration: underline; }
+    text-decoration: none; }
+
+.nav-top {
+  padding-top: -40px;
+  padding-bottom: -40px; }
 
 .main-nav {
   border-bottom-style: solid;
@@ -1063,8 +1074,7 @@ a {
   border-color: #555555; }
 
 .rss-feed {
-  padding-top: 30px;
-  padding-bottom: 30px; }
+  margin-top: -45px; }
 
 .feedEkList {
   list-style: none;
@@ -1087,9 +1097,6 @@ a {
 
 .itemContent p {
   display: none; }
-
-.rss-feed-spacer {
-  height: 300px; }
 
 .recent-posts {
   box-sizing: border-box;
@@ -1132,6 +1139,9 @@ a {
   background-size: cover; }
   .subscription .logo {
     width: 150px; }
+
+.nav-logo {
+  max-width: 150px; }
 
 .mail-club h5 {
   max-width: 300px; }
