@@ -1088,7 +1088,8 @@ a {
 
 .itemContent img {
   width: 100%;
-  height: auto; }
+  height: auto;
+  display: block; }
 
 .itemTitle {
   padding-top: 20px;
