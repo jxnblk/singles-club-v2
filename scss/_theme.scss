@@ -20,13 +20,14 @@ a {
 }
 
 .main-nav {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-color: $mid-gray;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  padding-bottom: .3rem;
+  padding-top: .7rem;
+  background-color: rgba(35,35,35, 0.95);
 }
 
-.mail-button {
-}
 
 // RSS Feed
 
@@ -53,7 +54,16 @@ a {
 .itemTitle {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: $dark-gray;
+  background-color: $red;
+  color: #fff;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+  transition-property: box-shadow , background-color;
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: darken($red, 20%);
+  }
 }
 
 .itemContent p {
@@ -90,8 +100,8 @@ a {
 .issue-meta {
   padding-right: 0rem;
   padding-left: 0rem;
-  padding-top: 0.7rem;
-  padding-bottom: 0.65rem;
+  padding-top: 0.86rem;
+  padding-bottom: 0.8rem;
   height: auto;
 
 }
@@ -139,5 +149,11 @@ a {
 
   .subscription {
     background: none;
+  }
+
+  .tagline, .nav-mark {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    font-size: .75rem;
   }
 }

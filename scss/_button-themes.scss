@@ -41,3 +41,10 @@
   &:focus {}
 }
 
+.button-inactive {
+  color: #fff;
+  background-color: $mid-gray;
+  cursor: text;
+  text-transform: uppercase;
+}
+

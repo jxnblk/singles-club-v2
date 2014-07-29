@@ -581,6 +581,8 @@ body {
   letter-spacing: 0.05em; }
   .button:hover, .button:focus {
     text-decoration: none; }
+  .button h4 {
+    margin-top: 0.3rem; }
 
 .form-button {
   padding: 0.375rem 0.75rem;
@@ -1069,9 +1071,12 @@ a {
   padding-bottom: -40px; }
 
 .main-nav {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-color: #555555; }
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  padding-bottom: .3rem;
+  padding-top: .7rem;
+  background-color: rgba(35, 35, 35, 0.95); }
 
 .rss-feed {
   margin-top: -45px; }
@@ -1094,7 +1099,14 @@ a {
 .itemTitle {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #232323; }
+  background-color: #ff0033;
+  color: #fff;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+  transition-property: box-shadow , background-color; }
+  .itemTitle:hover, .itemTitle:focus {
+    outline: none;
+    background-color: #99001f; }
 
 .itemContent p {
   display: none; }
@@ -1120,8 +1132,8 @@ a {
 .issue-meta {
   padding-right: 0rem;
   padding-left: 0rem;
-  padding-top: 0.7rem;
-  padding-bottom: 0.65rem;
+  padding-top: 0.86rem;
+  padding-bottom: 0.8rem;
   height: auto; }
 
 .archive {
@@ -1155,7 +1167,12 @@ a {
     height: auto; }
 
   .subscription {
-    background: none; } }
+    background: none; }
+
+  .tagline, .nav-mark {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    font-size: .75rem; } }
 .white {
   color: #fff; }
 
@@ -1314,6 +1331,12 @@ a {
   .button-red:hover {
     color: #fff;
     background-color: #99001f; }
+
+.button-inactive {
+  color: #fff;
+  background-color: #555555;
+  cursor: text;
+  text-transform: uppercase; }
 
 .nav a:hover, .nav a:focus {
   text-decoration: none; }
