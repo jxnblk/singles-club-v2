@@ -51,6 +51,7 @@
                     }
 
                     s += '<div class="itemTitle">' + item.title + '</div></a></div></li>';
+                    s += '<span></span>';
                 });
                 $("#" + id).append('<ul class="feedEkList">' + s + "</ul>");
             }
