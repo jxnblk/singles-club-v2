@@ -8,7 +8,7 @@ description: "Part record club. Part music journal."
 <script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <!-- bxSlider Javascript file -->
-<script src="/js/jquery.bxslider.min.js"></script>
+<script src="/js/jquery.bxslider.js"></script>
 <script src="/js/js.js"></script>
 <!-- bxSlider CSS file -->
 <link href="/../lib/jquery.bxslider.css" rel="stylesheet" />
@@ -20,13 +20,14 @@ description: "Part record club. Part music journal."
   $(document).ready(function(){
 
 $('.bxslider').bxSlider({
-  auto: true,
-  // autoControls: true
-  controls: false,
-  pagerCustom: '#bx-pager'
+  controls: true,
+  pagerCustom: '#bx-pager',
+  auto: false,
+  infiniteLoop: true
 });
   });
 </script>
+
 <script type="text/javascript">
 $(document).ready(function () {
 $('#divRss').FeedEk({
