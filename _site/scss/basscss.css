@@ -48,7 +48,8 @@ p, dl, ol, ul {
   font-size: 1rem; }
 
 h5, .h5 {
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  line-height: 1.5; }
 
 h6, .h6, small {
   font-size: 0.75rem; }
@@ -1150,7 +1151,7 @@ a {
   overflow: hidden; }
 
 .featured-content {
-  height: 434px; }
+  height: 439px; }
   .featured-content .border {
     border-width: 2px;
     border-color: #232323; }
@@ -1158,8 +1159,8 @@ a {
 .issue-meta {
   padding-right: 0rem;
   padding-left: 0rem;
-  padding-top: 0.86rem;
-  padding-bottom: 0.8rem;
+  padding-top: 0.79rem;
+  padding-bottom: 0.65rem;
   height: auto; }
 
 .archive {

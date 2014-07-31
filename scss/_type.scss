@@ -17,7 +17,7 @@ h2, .h2 { font-size: $h2; }
 h3, .h3 { font-size: $h3; }
 h4, .h4,
 p, dl, ol, ul  { font-size: $h4; }
-h5, .h5        { font-size: $h5; }
+h5, .h5        { font-size: $h5; line-height: $lh3; }
 h6, .h6, small { font-size: $h6; }
 
 // Responsive Type Scale
