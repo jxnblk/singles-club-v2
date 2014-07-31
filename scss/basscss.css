@@ -1103,6 +1103,9 @@ a {
   padding-top: .7rem;
   background-color: rgba(35, 35, 35, 0.95); }
 
+.tagline {
+  padding-top: .75rem; }
+
 .rss-feed {
   margin-top: -45px; }
 
@@ -1195,9 +1198,11 @@ a {
     background: none; }
 
   .tagline, .nav-mark {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-    font-size: .75rem; }
+    padding-right: 1rem;
+    padding-left: 1rem; }
+
+  .slider {
+    padding-top: 6rem; }
 
   .social-footer {
     float: none;
