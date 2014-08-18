@@ -26,7 +26,7 @@
             success: function (data) {
                 $("#" + id).empty();
                 $.each(data.responseData.feed.entries, function (e, item) {
-                    s += '<li><div class="col-4 col recent-posts h4 helvetica-light"><a href="' + item.link + '" target="' + def.TitleLinkTarget + '">';
+                    s += '<li><div class="col-4 col apercu-medium recent-posts h4"><a href="' + item.link + '" target="' + def.TitleLinkTarget + '">';
 
                     if (def.ShowPubDate){
                         dt= new Date(item.publishedDate);

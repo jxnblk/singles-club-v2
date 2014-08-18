@@ -1172,11 +1172,13 @@ a {
   padding-right: .5rem; }
 
 .subscription {
-  background: url(../images/subscription.jpg) no-repeat center center;
+  background: url(../images/subscription.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: 90%;
+  background-position: center center;
+  background-color: #ddd8d3; }
   .subscription .logo {
     width: 150px; }
 
