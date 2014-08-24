@@ -35,46 +35,46 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300; }
 
 h1, .h1 {
-  font-size: 2.5rem; }
+  font-size: 72px; }
 
 h2, .h2 {
-  font-size: 2rem; }
+  font-size: 42px; }
 
 h3, .h3 {
-  font-size: 1.25rem; }
+  font-size: 32px; }
 
 h4, .h4,
 p, dl, ol, ul {
-  font-size: 1rem; }
+  font-size: 23px; }
 
 h5, .h5 {
-  font-size: 0.875rem;
-  line-height: 1.5; }
+  font-size: 18px;
+  line-height: 1.5em; }
 
 h6, .h6, small {
-  font-size: 0.75rem; }
+  font-size: 13px; }
 
 @media screen and (min-width: 48em) {
   .h1 {
-    font-size: 3.5rem; }
+    font-size: 72px; }
 
   .h2 {
-    font-size: 2rem; }
+    font-size: 42px; }
 
   .h3 {
-    font-size: 1.5rem; }
+    font-size: 32px; }
 
   .h4 {
-    font-size: 1.125rem; }
+    font-size: 23px; }
 
   .h5 {
-    font-size: 0.875rem; }
+    font-size: 18px; }
 
   .h6 {
-    font-size: 0.875rem; }
+    font-size: 13px; }
 
   p {
-    font-size: 1.125rem; } }
+    font-size: 23px; } }
 .bold {
   font-weight: bold; }
 
@@ -106,13 +106,13 @@ h6, .h6, small {
   text-align: justify; }
 
 .lh1 {
-  line-height: 1; }
+  line-height: 1em; }
 
 .lh2 {
-  line-height: 1.25; }
+  line-height: 1.25em; }
 
 .lh3 {
-  line-height: 1.5; }
+  line-height: 1.5em; }
 
 .ls-1 {
   letter-spacing: -0.1em; }
@@ -562,6 +562,59 @@ body {
   padding: 0.1875rem 0.75rem;
   line-height: 1.75rem; }
 
+.issue-wrapper {
+  background: #fff;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 5%; }
+
+.issue-nav {
+  height: 70px;
+  border-bottom: 1px solid #eeeeee;
+  display: table;
+  width: 100%; }
+  .issue-nav .mark-sm {
+    width: 25px;
+    padding-left: 22px;
+    padding-top: 10px; }
+
+.nav-home-button {
+  cursor: pointer;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none; }
+  .nav-home-button:hover, .nav-home-button:focus {
+    text-decoration: none;
+    background-color: #eeeeee; }
+
+.issue-nav-element {
+  display: table-cell;
+  vertical-align: middle; }
+
+.nav-mark {
+  width: 70px; }
+
+.nav-issues {
+  width: 300px; }
+
+.nav-social {
+  width: 100px; }
+  .nav-social .ss-icon {
+    font-size: 18px; }
+
+.nav-mark, .nav-issues, .nav-player {
+  border-right: 1px solid #eeeeee; }
+
+.issue-header {
+  height: 80vh; }
+
+.woodsman {
+  background: url(../journal/woodsman/images/woodsman-header.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+@media screen and (max-width: 768px) {
+  .issue-wrapper {
+    margin: 0; } }
 .button {
   font-family: 'Apercu Medium', 'Helvetica-Medium', sans-serif;
   font-weight: 600;
@@ -833,9 +886,6 @@ body {
   margin-right: -0.75rem;
   margin-left: -0.75rem; }
 
-.nav-mark {
-  width: 30px; }
-
 .site-wrapper {
   position: relative;
   overflow: hidden;
@@ -868,14 +918,17 @@ body {
   font-family: 'LydianBT-Italic';
   src: url("../fonts/lydian-italic.eot");
   src: url("../fonts/lydian-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/lydian-italic.woff") format("woff"), url("../fonts/lydian-italic.ttf") format("truetype"), url("../fonts/lydian-italic.svg#wf") format("svg"); }
+
 @font-face {
   font-family: 'LydianBT-Roman';
   src: url("../fonts/lydian.eot");
   src: url("../fonts/lydian.eot?#iefix") format("embedded-opentype"), url("../fonts/lydian.woff") format("woff"), url("../fonts/lydian.ttf") format("truetype"); }
+
 @font-face {
   font-family: 'LydianBT-Bold';
   src: url("../fonts/lydian-bold.eot");
   src: url("../fonts/lydian-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/lydian-bold.woff") format("woff"), url("../fonts/lydian-bold.ttf") format("truetype"); }
+
 /*
 * Symbolset
 * www.symbolset.com
@@ -891,6 +944,7 @@ body {
   src: url("../fonts/ss-social-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ss-social-regular.woff") format("woff"), url("../fonts/ss-social-regular.ttf") format("truetype"), url("../fonts/ss-social-regular.svg#SSSocialRegular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 /* This triggers a redraw in IE to Fix IE8's :before content rendering. */
 html:hover [class^="ss-"] {
   -ms-zoom: 1; }
@@ -1080,8 +1134,8 @@ html:hover [class^="ss-"] {
   content: ''; }
 
 body {
-  color: #232323;
-  background-color: #000; }
+  color: #000;
+  background-color: #242424; }
 
 a {
   color: #fff;
@@ -1154,7 +1208,7 @@ a {
   height: 439px; }
   .featured-content .border {
     border-width: 2px;
-    border-color: #232323; }
+    border-color: #242424; }
 
 .issue-meta {
   padding-right: 0rem;
@@ -1198,7 +1252,7 @@ a {
   .subscription {
     background: none; }
 
-  .tagline, .nav-mark {
+  .tagline {
     padding-right: 1rem;
     padding-left: 1rem; }
 
@@ -1212,7 +1266,7 @@ a {
   color: #fff; }
 
 .dark-gray {
-  color: #232323; }
+  color: #242424; }
 
 .mid-gray {
   color: #555555; }
@@ -1242,7 +1296,7 @@ a {
   background-color: #fff; }
 
 .bg-dark-gray {
-  background-color: #232323; }
+  background-color: #242424; }
 
 .bg-mid-gray {
   background-color: #555555; }
@@ -1269,7 +1323,7 @@ a {
   background-color: #f7f7f7; }
 
 .link-dark-gray a {
-  color: #232323; }
+  color: #242424; }
 
 .link-mid-gray a {
   color: #555555; }
@@ -1385,9 +1439,9 @@ a {
   background-color: rgba(0, 0, 0, 0.375); }
 
 .nav-light > a {
-  color: #232323; }
+  color: #242424; }
   .nav-light > a:hover, .nav-light > a:focus {
-    color: #232323;
+    color: #242424;
     background-color: rgba(0, 0, 0, 0.125); }
 .nav-light .active {
   background-color: rgba(0, 0, 0, 0.25); }
@@ -1403,7 +1457,7 @@ a {
     .nav-borders > a:first-child {
       border-top: 0; }
   .nav-borders .active {
-    color: #232323; }
+    color: #242424; }
 
 .nav-pills > a {
   border-radius: 0; }
@@ -1434,9 +1488,9 @@ a {
     .nav-segments .active:hover, .nav-segments .active:focus {
       background-color: #007199; }
   .nav-segments .disabled {
-    color: rgba(35, 35, 35, 0.5); }
+    color: rgba(36, 36, 36, 0.5); }
     .nav-segments .disabled:hover, .nav-segments .disabled:focus {
-      color: rgba(35, 35, 35, 0.5);
+      color: rgba(36, 36, 36, 0.5);
       background-color: transparent; }
 
 .nav-tabs > a {

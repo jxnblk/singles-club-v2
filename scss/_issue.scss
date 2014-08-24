@@ -1,0 +1,76 @@
+.issue-wrapper {
+  background: #fff;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top:5%;
+}
+
+.issue-nav {
+  height: 70px;
+  border-bottom: 1px solid $light-gray;
+  display: table;
+  width: 100%;
+  .mark-sm {
+    width: 25px;
+    padding-left: 22px;
+    padding-top: 10px;
+  }
+}
+
+.nav-home-button {
+  cursor: pointer;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    background-color: $light-gray;
+  }
+}
+
+.issue-nav-element {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+//Nav Widths
+.nav-mark {
+  width: 70px;
+}
+.nav-issues {
+  width: 300px;
+}
+.nav-player {
+}
+.nav-social {
+  width: 100px;
+  .ss-icon {
+    font-size: 18px;
+  }
+}
+
+.nav-mark, .nav-issues, .nav-player {
+  border-right: 1px solid $light-gray;
+}
+
+.issue-sub {
+
+}
+
+
+.issue-header {
+  height: 80vh;
+}
+
+.woodsman {
+  background: url(../journal/woodsman/images/woodsman-header.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .issue-wrapper {
+    margin: 0;
+  }
+}

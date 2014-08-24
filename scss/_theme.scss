@@ -1,8 +1,8 @@
 // Base thematic styles
 
 body {
-  color: $dark-gray;
-  background-color: #000;
+  color: #000;
+  background-color: $dark-gray;
 }
 
 a {
@@ -158,7 +158,7 @@ a {
     background: none;
   }
 
-  .tagline, .nav-mark {
+  .tagline {
     padding-right: 1rem;
     padding-left: 1rem;
   }

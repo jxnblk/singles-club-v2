@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Issue 2: Small Sur</title>
+  <title>Issue 3 – Woodsman</title>
   <meta name="description" content="Singles Club Issue 2: Small Sur">
   <meta name="keywords" content="record club, vinyl, records, music, indie, lp">
   <meta name="author" content="">
@@ -13,9 +13,12 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="http://singlesclub.fm/journal/woodsman/index.htmlimages/smallsur_facebook.jpg">
   <meta property="og:url" content="http://singlesclub.fm/journal/woodsman/index.html">
-  <meta property="og:title" content="Issue 2: Small Sur">
+  <meta property="og:title" content="Issue 3 – Woodsman">
   <meta property="og:description" content="Singles Club Issue 2: Small Sur">
   <meta property="fb:app_id" content="1450710301810527">
+  <!-- jQuery library (served from Google) -->
+  <script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
   <style>
   <!-- the .wf-loading class is used to control FOUT (flash of unstyled text) -->
@@ -38,9 +41,66 @@
     s.parentNode.insertBefore(wf, s);
   })();
 </script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#issue-sub').hide().before('');
+    $('a#toggle-nav').click(function (e) {
+        e.preventDefault();
+        $('#issue-sub').slideToggle(200);
+    });
+    $(document).click(function (e) {
+        if ($(e.target).closest('#issue-sub').length > 0 || $(e.target).closest('#toggle-nav').length > 0) return;
+        $('#issue-sub').slideUp(200);
+    });
+  });
+</script
 
 </head>
 
+
 <body>
-<h1 class="blue"> test </h1>
+
+  <div class="issue-wrapper">
+    <!--HEADER-->
+    <div class="issue-header woodsman">
+    </div>
+    <!--NAV-->
+    <div class="issue-nav">
+          <div class="issue-nav-element nav-home-button nav-mark">
+            <a href="#">
+              <img src="/images/sc-dark.svg" class="mark-sm">
+            </a>
+          </div>
+        <div class="issue-nav-element nav-issues px2">
+          <a href="#" id="toggle-nav">
+          <h4>Issue 3: Woodsman</h4>
+          </a>
+        </div>
+        <div class="issue-nav-element nav-player px2">
+          <h5>Side A: 'Further'</h5>
+        </div>
+        <div class="issue-nav-element nav-social px2 center">
+          <h6 class="mb1"> Share: </h6>
+          <a href="https://twitter.com/singlesclubfm" class="ss-icon">twitter</a>
+          <a href="http://www.facebook.com/singlesclubfm" class="ss-icon pl1">facebook</a>
+        </div>
+    </div>
+    <div id="issue-sub" class="bg-off-black py3">
+      <div class="table table-fixed white">
+        <div class="table-cell center">
+          <h4>Issue 1: Daniel Bachman</h4>
+        </div>
+        <div class="table-cell center">
+          <h4>Issue 2: Small Sur</h4>
+        </div>
+        <div class="table-cell center">
+          <h4>Issue 3: Woodsman</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1> Test </h1>
+    </div>
+  </div>
 </body>

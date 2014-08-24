@@ -1,52 +1,53 @@
 ---
-title: "Issue 2: Small Sur"
+title: "Issue 3 – Woodsman"
 description: "Singles Club Issue 2: Small Sur"
 socialimage: "images/smallsur_facebook.jpg"
 ---
-
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>{{ page.title }}</title>
-  <meta name="description" content="{{ page.description }}">
-  <meta name="keywords" content="record club, vinyl, records, music, indie, lp">
-  <meta name="author" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="/favicon.png" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link href="/../scss/basscss.css" rel="stylesheet" />
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="http://singlesclub.fm{{ page.url }}{{ page.socialimage }}">
-  <meta property="og:url" content="http://singlesclub.fm{{ page.url }}">
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:description" content="{{ page.description }}">
-  <meta property="fb:app_id" content="1450710301810527">
-
-  <style>
-  <!-- the .wf-loading class is used to control FOUT (flash of unstyled text) -->
-  html { transition: opacity .2s ease; }
-  .wf-loading { opacity: 0; }
-</style>
-<script type="text/javascript">
-  var html = document.getElementsByTagName('html')[0];
-  html.className += '  wf-loading';
-  setTimeout(function() {
-    html.className = html.className.replace(' wf-loading', '');
-  }, 5000);
-  WebFontConfig = { fontdeck: { id: '39874' } };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = 'http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })();
-</script>
-
-</head>
+{% include head.html %}
 
 <body>
-<h1 class="blue"> test </h1>
+
+  <div class="issue-wrapper">
+    <!--HEADER-->
+    <div class="issue-header woodsman">
+    </div>
+    <!--NAV-->
+    <div class="issue-nav">
+          <div class="issue-nav-element nav-home-button nav-mark">
+            <a href="#">
+              <img src="/images/sc-dark.svg" class="mark-sm">
+            </a>
+          </div>
+        <div class="issue-nav-element nav-issues px2">
+          <a href="#" id="toggle-nav">
+          <h4>Issue 3: Woodsman</h4>
+          </a>
+        </div>
+        <div class="issue-nav-element nav-player px2">
+          <h5>Side A: 'Further'</h5>
+        </div>
+        <div class="issue-nav-element nav-social px2 center">
+          <h6 class="mb1"> Share: </h6>
+          <a href="https://twitter.com/singlesclubfm" class="ss-icon">twitter</a>
+          <a href="http://www.facebook.com/singlesclubfm" class="ss-icon pl1">facebook</a>
+        </div>
+    </div>
+    <div id="issue-sub" class="bg-off-black py3">
+      <div class="table table-fixed white">
+        <div class="table-cell center">
+          <h4>Issue 1: Daniel Bachman</h4>
+        </div>
+        <div class="table-cell center">
+          <h4>Issue 2: Small Sur</h4>
+        </div>
+        <div class="table-cell center">
+          <h4>Issue 3: Woodsman</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1> Test </h1>
+    </div>
+  </div>
 </body>
