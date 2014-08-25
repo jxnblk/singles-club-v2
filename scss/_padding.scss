@@ -42,9 +42,8 @@
 .pl2  { padding-left: $space; }
 .pl3  { padding-left: 2*$space; }
 
-@media screen and (max-width: $breakpoint-mobile) {
-  .m-px10 {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
+.image-right-p3 {
+  padding-top: 3*$space;
+  padding-bottom: 3*$space;
+  padding-left: 3*$space;
 }

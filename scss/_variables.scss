@@ -26,7 +26,8 @@ $desktop-h5: 18px !default;
 $desktop-h6: 13px !default;
 
 // Typography
-$sans-serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sans-serif-light: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif: "TimesNewRoman", "Times New Roman", Times, Baskerville, Georgia, serif;
 
 //line height
@@ -43,6 +44,8 @@ $ls2: .2em;
 $ls3: .3em;
 
 // Breakpoints
+$breakpoint-iphone: 322px;
+$breakpoint-ipad: 768px;
 $breakpoint-mobile: 768px;
 $breakpoint-desktop: 48em !default;
 
@@ -59,16 +62,19 @@ $grid-max-width: 70rem !default;
 $grid-gutter: 2 * $space !default;
 
 // Theme
-$blue: #0096cc !default;
-$light-gray: #eee !default;
-$mid-gray: #555 !default;
-$dark-gray: #242424 !default;
-$off-black: #111;
-$off-white: #F7F7F7;
-
-$red: #FF0033 !default;
-$green: #11e966 !default;
-$yellow: #ffdc00 !default;
+$light-gray: #e2e2e2 !default;
+$mid-gray: #a8a8a7 !default;
+$gray: #a8a8a7 !default;
+$dark-gray: #333333 !default;
+$off-black: #061310 !default;
+$black: #061310 !default;
+$off-white: #f7f7f7 !default;
+$white: #f7f7f7 !default;
+$blue: #3b00cc !default;
+$red: #ff0033 !default;
+$yellow: #ffb600 !default;
+$green: #00ffaa !default;
+$orange: #ff3000 !default;
 
 // Alpha blacks for UI elements
 $darken-1: rgba(#000,.125) !default;

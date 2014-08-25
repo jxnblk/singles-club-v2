@@ -5,6 +5,7 @@
   margin-top:5%;
 }
 
+//Nav Bar
 .issue-nav {
   height: 70px;
   border-bottom: 1px solid $light-gray;
@@ -17,6 +18,7 @@
   }
 }
 
+//Creates linking Singles Club mark in NAV
 .nav-home-button {
   cursor: pointer;
   border: none;
@@ -25,52 +27,107 @@
   &:hover,
   &:focus {
     text-decoration: none;
-    background-color: $light-gray;
+    color: $dark-gray !important;
+    background-color: $white;
   }
 }
-
+//Creates table-cell that doesn't break down to full width on mobile
 .issue-nav-element {
   display: table-cell;
   vertical-align: middle;
 }
 
-//Nav Widths
+//Nav Widths -
 .nav-mark {
   width: 70px;
 }
 .nav-issues {
   width: 300px;
 }
-.nav-player {
-}
 .nav-social {
   width: 100px;
   .ss-icon {
     font-size: 18px;
+    color: $light-gray;
+    &:hover {
+      color: darken($light-gray, 10%);
+      text-decoration: none;
+    }
   }
 }
-
 .nav-mark, .nav-issues, .nav-player {
   border-right: 1px solid $light-gray;
 }
 
-.issue-sub {
-
+.nav-issues a {
+  color: $dark-gray;
+  &:hover {
+    color: $dark-gray;
+    text-decoration: none;
+  }
 }
 
+.toggle-down {
+  width: 12px;
+  margin-left: 15px;
+  fill: $dark-gray;
+}
 
+//Hero
 .issue-header {
   height: 80vh;
 }
 
+//Backgrounds
 .woodsman {
-  background: url(../journal/woodsman/images/woodsman-header.jpg) no-repeat center center fixed;
-  background-size: cover;
+  background: url(../journal/woodsman/images/woodsman-header.jpg);
 }
 
+//Feature Meta
+.feature-meta {
+  border-bottom: 1px solid $light-gray;
+  border-top: 1px solid $light-gray;
+}
+
+.feature-number {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid $light-gray;
+    color: $light-gray;
+    text-align: center;
+    line-height: 20px;
+}
 
 @media screen and (max-width: $breakpoint-mobile) {
   .issue-wrapper {
     margin: 0;
   }
+  .issue-header {
+    height: 800px;
+  }
+  @media screen and (max-width: $breakpoint-iphone) {
+    .float-image {
+      float: none;
+      padding: 0;
+      width: 110%;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+    .issue-wrapper {
+      margin: 0;
+    }
+    .nav-player {
+      width: 100%;
+      height: 70px;
+    }
+    .issue-header {
+      height: 480px;
+    }
 }
+
+}
+
+

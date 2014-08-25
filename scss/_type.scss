@@ -75,7 +75,7 @@ h6, .h6, small { font-size: $h6; }
 
 //Typefaces
 body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: $sans-serif-light;
   font-weight: 300;
   line-height: 1.75rem;
   letter-spacing: $ls05;
@@ -83,41 +83,28 @@ body {
           text-size-adjust: none;
 }
 
-.helvetica {
-  font-family: 'Helvetica', sans-serif;
+.sans-serif, .sans-serif-light, .lydian-italic, .lydian, .lydian-bold {
+  -webkit-font-smoothing:antialiased;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+.sans-serif {
+  font-family: $sans-serif;
   font-weight: normal;
   font-style: normal;
 }
 
-.helvetica-light {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+.sans-serif-light {
+  font-family: $sans-serif-light;
   font-weight: 300;
-  line-height: 1.75rem;
-  letter-spacing: $ls05;
-}
-
-.apercu {
-  font-family: 'Apercu Regular', 'Helvetica', sans-serif;
-  font-weight: normal;
   font-style: normal;
 }
 
-.apercu-light {
-  font-family: 'Apercu Light', 'Helvetica-Light', sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.apercu-medium {
-  font-family: 'Apercu Medium', 'Helvetica-Medium', sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.apercu-bold {
-  font-family: 'Apercu Bold', 'Helvetica-Bold', sans-serif;
-  font-weight: bold;
-  font-style: normal;
+.serif, p {
+  font-family: $serif !important;
+  font-style: normal !important;
+  line-height: 32px !important;
 }
 
 .lydian-italic {
@@ -134,13 +121,4 @@ body {
 .lydian-bold {
   font-family: LydianBT-Bold, georgia;
   font-weight: normal;
-}
-
-// Uncomment this to switch to Georgia on paragraphs
-// p,
-
-.serif {
-  font-family: Georgia, serif;
-  font-size: 19px;
-  -webkit-font-smoothing: antialiased;
 }

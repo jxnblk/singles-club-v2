@@ -133,43 +133,32 @@ h6, .h6, small {
   letter-spacing: 0.3em; }
 
 body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1.75rem;
   letter-spacing: 0.05em;
   -webkit-text-size-adjust: none;
   text-size-adjust: none; }
 
-.helvetica {
-  font-family: 'Helvetica', sans-serif;
+.sans-serif, .sans-serif-light, .lydian-italic, .lydian, .lydian-bold {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none; }
+
+.sans-serif {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal; }
 
-.helvetica-light {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+.sans-serif-light {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  line-height: 1.75rem;
-  letter-spacing: 0.05em; }
-
-.apercu {
-  font-family: 'Apercu Regular', 'Helvetica', sans-serif;
-  font-weight: normal;
   font-style: normal; }
 
-.apercu-light {
-  font-family: 'Apercu Light', 'Helvetica-Light', sans-serif;
-  font-weight: 200;
-  font-style: normal; }
-
-.apercu-medium {
-  font-family: 'Apercu Medium', 'Helvetica-Medium', sans-serif;
-  font-weight: 600;
-  font-style: normal; }
-
-.apercu-bold {
-  font-family: 'Apercu Bold', 'Helvetica-Bold', sans-serif;
-  font-weight: bold;
-  font-style: normal; }
+.serif, p {
+  font-family: "TimesNewRoman", "Times New Roman", Times, Baskerville, Georgia, serif !important;
+  font-style: normal !important;
+  line-height: 32px !important; }
 
 .lydian-italic {
   font-family: LydianBT-Italic, georgia;
@@ -183,11 +172,6 @@ body {
 .lydian-bold {
   font-family: LydianBT-Bold, georgia;
   font-weight: normal; }
-
-.serif {
-  font-family: Georgia, serif;
-  font-size: 19px;
-  -webkit-font-smoothing: antialiased; }
 
 .m0 {
   margin: 0; }
@@ -370,10 +354,11 @@ body {
 .pl3 {
   padding-left: 2rem; }
 
-@media screen and (max-width: 768px) {
-  .m-px10 {
-    padding-left: 5%;
-    padding-right: 5%; } }
+.image-right-p3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem; }
+
 .inline {
   display: inline; }
 
@@ -391,6 +376,9 @@ body {
 
 .right {
   float: right; }
+
+.no-float {
+  float: none; }
 
 .flush {
   margin-bottom: -0.6rem; }
@@ -410,6 +398,15 @@ body {
 .half-width {
   width: 50%; }
 
+.bg-cover {
+  background-size: cover; }
+
+.bg-contain {
+  background-size: contain; }
+
+.bg-center {
+  background-position: center center; }
+
 .mobile-show {
   display: none !important; }
 
@@ -425,6 +422,22 @@ body {
     display: none !important; }
 
   .mobile-center {
+    text-align: center; } }
+.iphone-show {
+  display: none !important; }
+
+@media screen and (max-width: 322px) {
+  .iphone-show,
+  .iphone-block {
+    display: block !important; }
+
+  .iphone-block {
+    width: 100%; }
+
+  .iphone-hide {
+    display: none !important; }
+
+  .iphone-center {
     text-align: center; } }
 .form {
   font-size: 1rem; }
@@ -570,7 +583,7 @@ body {
 
 .issue-nav {
   height: 70px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #e2e2e2;
   display: table;
   width: 100%; }
   .issue-nav .mark-sm {
@@ -585,7 +598,8 @@ body {
   appearance: none; }
   .nav-home-button:hover, .nav-home-button:focus {
     text-decoration: none;
-    background-color: #eeeeee; }
+    color: #333333 !important;
+    background-color: #f7f7f7; }
 
 .issue-nav-element {
   display: table-cell;
@@ -600,21 +614,70 @@ body {
 .nav-social {
   width: 100px; }
   .nav-social .ss-icon {
-    font-size: 18px; }
+    font-size: 18px;
+    color: #e2e2e2; }
+    .nav-social .ss-icon:hover {
+      color: #c9c9c9;
+      text-decoration: none; }
 
 .nav-mark, .nav-issues, .nav-player {
-  border-right: 1px solid #eeeeee; }
+  border-right: 1px solid #e2e2e2; }
+
+.nav-issues a {
+  color: #333333; }
+  .nav-issues a:hover {
+    color: #333333;
+    text-decoration: none; }
+
+.toggle-down {
+  width: 12px;
+  margin-left: 15px;
+  fill: #333333; }
 
 .issue-header {
   height: 80vh; }
 
 .woodsman {
-  background: url(../journal/woodsman/images/woodsman-header.jpg) no-repeat center center fixed;
-  background-size: cover; }
+  background: url(../journal/woodsman/images/woodsman-header.jpg); }
+
+.feature-meta {
+  border-bottom: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2; }
+
+.feature-number {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  color: #e2e2e2;
+  text-align: center;
+  line-height: 20px; }
 
 @media screen and (max-width: 768px) {
   .issue-wrapper {
-    margin: 0; } }
+    margin: 0; }
+
+  .issue-header {
+    height: 800px; } }
+@media screen and (max-width: 768px) and (max-width: 322px) {
+  .float-image {
+    float: none;
+    padding: 0;
+    width: 110%;
+    margin-right: -15px;
+    margin-left: -15px; }
+
+  .issue-wrapper {
+    margin: 0; }
+
+  .nav-player {
+    width: 100%;
+    height: 70px; }
+
+  .issue-header {
+    height: 480px; } }
 .button {
   font-family: 'Apercu Medium', 'Helvetica-Medium', sans-serif;
   font-weight: 600;
@@ -1134,14 +1197,21 @@ html:hover [class^="ss-"] {
   content: ''; }
 
 body {
-  color: #000;
-  background-color: #242424; }
+  color: #333333;
+  background-color: #061310; }
 
 a {
-  color: #fff;
-  text-decoration: none; }
+  color: #3b00cc;
+  text-decoration: underline; }
   a:hover {
-    color: #cc0029;
+    color: #2c0099;
+    text-decoration: none; }
+
+.link-light-gray {
+  color: #e2e2e2;
+  text-decoration: underline; }
+  .link-light-gray:hover {
+    color: #c9c9c9;
     text-decoration: none; }
 
 .nav-top {
@@ -1198,7 +1268,7 @@ a {
   padding-left: 0;
   border-right-style: solid;
   border-width: 2px;
-  border-color: #111111; }
+  border-color: #061310; }
 
 .issue-label {
   float: right;
@@ -1208,7 +1278,7 @@ a {
   height: 439px; }
   .featured-content .border {
     border-width: 2px;
-    border-color: #242424; }
+    border-color: #333333; }
 
 .issue-meta {
   padding-right: 0rem;
@@ -1263,70 +1333,73 @@ a {
     float: none;
     margin-right: 30px; } }
 .white {
-  color: #fff; }
+  color: #f7f7f7; }
 
-.dark-gray {
-  color: #242424; }
-
-.mid-gray {
-  color: #555555; }
+.black {
+  color: #061310; }
 
 .light-gray {
-  color: #eeeeee; }
+  color: #e2e2e2; }
+
+.gray {
+  color: #a8a8a7; }
+
+.dark-gray {
+  color: #333333; }
 
 .blue {
-  color: #0096cc; }
-
-.green {
-  color: #11e966; }
-
-.yellow {
-  color: #ffdc00; }
+  color: #3b00cc; }
 
 .red {
   color: #ff0033; }
 
-.off-black {
-  color: #111111; }
+.green {
+  color: #00ffaa; }
 
-.off-white {
-  color: #f7f7f7; }
+.yellow {
+  color: #ffb600; }
 
-.bg-white {
-  background-color: #fff; }
+.orange {
+  color: #ff3000; }
 
 .bg-dark-gray {
-  background-color: #242424; }
+  background-color: #333333; }
 
-.bg-mid-gray {
-  background-color: #555555; }
+.bg-mid-gray, .bg-gray {
+  background-color: #a8a8a7; }
 
 .bg-light-gray {
-  background-color: #eeeeee; }
+  background-color: #e2e2e2; }
 
 .bg-blue {
-  background-color: #0096cc; }
+  background-color: #3b00cc; }
 
 .bg-green {
-  background-color: #11e966; }
+  background-color: #00ffaa; }
 
 .bg-yellow {
-  background-color: #ffdc00; }
+  background-color: #ffb600; }
 
 .bg-red {
   background-color: #ff0033; }
 
-.bg-off-black {
-  background-color: #111111; }
+.bg-orange {
+  background-color: #ff3000; }
 
-.bg-off-white {
+.bg-off-black, .bg-black {
+  background-color: #061310; }
+
+.bg-off-white, .bg-white {
   background-color: #f7f7f7; }
 
 .link-dark-gray a {
-  color: #242424; }
+  color: #333333; }
 
-.link-mid-gray a {
-  color: #555555; }
+.link-gray a {
+  color: #a8a8a7; }
+
+.link-light-gray a {
+  color: #e2e2e2; }
 
 .border {
   border-style: solid;
@@ -1370,15 +1443,15 @@ a {
   .form-light .textarea:focus,
   .form-light .select:focus {
     outline: none;
-    border-color: #0096cc;
-    box-shadow: 0 0 0.125rem rgba(0, 150, 204, 0.5); }
+    border-color: #3b00cc;
+    box-shadow: 0 0 0.125rem rgba(59, 0, 204, 0.5); }
 .form-light .radio input,
 .form-light .checkbox input {
   transition: box-shadow .2s ease; }
   .form-light .radio input:focus,
   .form-light .checkbox input:focus {
     outline: none;
-    box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 150, 204, 0.5); }
+    box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(59, 0, 204, 0.5); }
 .form-light .radio input {
   border-radius: 50%; }
 .form-light .fieldset {
@@ -1397,21 +1470,21 @@ a {
   transition-property: box-shadow , background-color; }
   .button:focus {
     outline: none;
-    box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 150, 204, 0.5); }
+    box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(59, 0, 204, 0.5); }
 
 .button-blue {
   color: #fff;
-  background-color: #0096cc; }
+  background-color: #3b00cc; }
   .button-blue:hover {
     color: #fff;
-    background-color: #004b66; }
+    background-color: #1e0066; }
 
 .button-gray {
   color: #fff;
-  background-color: #555555; }
+  background-color: #a8a8a7; }
   .button-gray:hover {
     color: #fff;
-    background-color: #222222; }
+    background-color: #757574; }
 
 .button-red {
   color: #fff;
@@ -1423,7 +1496,7 @@ a {
 
 .button-inactive {
   color: #fff;
-  background-color: #555555;
+  background-color: #a8a8a7;
   cursor: text;
   text-transform: uppercase; }
 
@@ -1439,9 +1512,9 @@ a {
   background-color: rgba(0, 0, 0, 0.375); }
 
 .nav-light > a {
-  color: #242424; }
+  color: #333333; }
   .nav-light > a:hover, .nav-light > a:focus {
-    color: #242424;
+    color: #333333;
     background-color: rgba(0, 0, 0, 0.125); }
 .nav-light .active {
   background-color: rgba(0, 0, 0, 0.25); }
@@ -1457,26 +1530,26 @@ a {
     .nav-borders > a:first-child {
       border-top: 0; }
   .nav-borders .active {
-    color: #242424; }
+    color: #333333; }
 
 .nav-pills > a {
   border-radius: 0; }
   .nav-pills > a:hover, .nav-pills > a:focus {
-    background-color: rgba(0, 150, 204, 0.125); }
+    background-color: rgba(59, 0, 204, 0.125); }
 .nav-pills .active {
   color: white;
-  background-color: #0096cc; }
+  background-color: #3b00cc; }
   .nav-pills .active:hover, .nav-pills .active:focus {
-    background-color: #007199; }
+    background-color: #2c0099; }
 
 .nav-segments {
-  box-shadow: inset 0 0 0 1px #0096cc;
+  box-shadow: inset 0 0 0 1px #3b00cc;
   border-radius: 0; }
   .nav-segments > a {
-    border-right: 1px solid #0096cc;
-    border-bottom: 1px solid #0096cc; }
+    border-right: 1px solid #3b00cc;
+    border-bottom: 1px solid #3b00cc; }
     .nav-segments > a:hover, .nav-segments > a:focus {
-      background-color: rgba(0, 150, 204, 0.125); }
+      background-color: rgba(59, 0, 204, 0.125); }
     .nav-segments > a:first-child {
       border-radius: 0 0 0 0; }
     .nav-segments > a:last-child {
@@ -1484,13 +1557,13 @@ a {
       border-radius: 0 0 0 0; }
   .nav-segments .active {
     color: white;
-    background-color: #0096cc; }
+    background-color: #3b00cc; }
     .nav-segments .active:hover, .nav-segments .active:focus {
-      background-color: #007199; }
+      background-color: #2c0099; }
   .nav-segments .disabled {
-    color: rgba(36, 36, 36, 0.5); }
+    color: rgba(51, 51, 51, 0.5); }
     .nav-segments .disabled:hover, .nav-segments .disabled:focus {
-      color: rgba(36, 36, 36, 0.5);
+      color: rgba(51, 51, 51, 0.5);
       background-color: transparent; }
 
 .nav-tabs > a {
