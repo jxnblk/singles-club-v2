@@ -37,7 +37,7 @@
   vertical-align: middle;
 }
 
-//Nav Widths -
+//Nav Widths
 .nav-mark {
   width: 70px;
 }
@@ -99,6 +99,10 @@
     color: $light-gray;
     text-align: center;
     line-height: 20px;
+}
+
+@media screen and (max-width: 890px) {
+
 }
 
 @media screen and (max-width: $breakpoint-mobile) {
