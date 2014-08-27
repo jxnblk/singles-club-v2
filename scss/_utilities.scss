@@ -29,19 +29,14 @@
 
 // Responsive states
 .mobile-show { display: none !important; }
-@media screen and (max-width: 48em) {
+@media screen and (max-width: $breakpoint-iphone) {
   .mobile-show,
   .mobile-block  { display: block !important; }
   .mobile-block  { width: 100%; }
   .mobile-hide   { display: none !important; }
   .mobile-center { text-align: center; }
-}
-.iphone-show { display: none !important; }
-@media screen and (max-width: $breakpoint-iphone) {
-  .iphone-show,
-  .iphone-block  { display: block !important; }
-  .iphone-block  { width: 100%; }
-  .iphone-hide   { display: none !important; }
-  .iphone-center { text-align: center; }
-}
 
+}
+@media screen and (max-width: $breakpoint-ipad) {
+  .ipad-hide { display: none !important; }
+}

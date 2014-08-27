@@ -11,11 +11,13 @@
   border-bottom: 1px solid $light-gray;
   display: table;
   width: 100%;
-  .mark-sm {
-    width: 25px;
-    padding-left: 22px;
-    padding-top: 10px;
-  }
+}
+
+.mark-sm {
+  width: 30px;
+  padding-left: 22px;
+  padding-top: 10px;
+  fill: $dark-gray;
 }
 
 //Creates linking Singles Club mark in NAV
@@ -80,7 +82,7 @@
 
 //Backgrounds
 .woodsman {
-  background: url(../journal/woodsman/images/woodsman-header.jpg);
+  background: url(../journal/woodsman/images/woodsman-header.jpg) no-repeat;
 }
 
 //Feature Meta
@@ -112,6 +114,9 @@
   .issue-header {
     height: 800px;
   }
+  .nav-issues {
+  width: 150px;
+  }
   @media screen and (max-width: $breakpoint-iphone) {
     .float-image {
       float: none;
@@ -129,6 +134,10 @@
     }
     .issue-header {
       height: 480px;
+    }
+    .mark-sm {
+      width: 60px;
+      padding-left: 2px;
     }
 }
 
