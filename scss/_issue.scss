@@ -1,99 +1,32 @@
-.issue-wrapper {
-  background: #fff;
-  margin-right: 5%;
-  margin-left: 5%;
-  margin-top:5%;
-}
+// .issue-wrapper {
+//   background: #fff;
+//   margin-right: 5%;
+//   margin-left: 5%;
+//   margin-top:5%;
+// }
 
-//Nav Bar
-.issue-nav {
-  height: 70px;
-  border-bottom: 1px solid $light-gray;
-  display: table;
-  width: 100%;
-}
-
-.mark-sm {
-  width: 30px;
-  padding-left: 22px;
-  padding-top: 10px;
-  fill: $dark-gray;
-}
-
-//Creates linking Singles Club mark in NAV
-.nav-home-button {
-  cursor: pointer;
-  border: none;
-  -webkit-appearance: none;
-  appearance: none;
-  &:hover,
-  &:focus {
-    text-decoration: none;
-    color: $dark-gray !important;
-    background-color: $white;
-  }
-}
-//Creates table-cell that doesn't break down to full width on mobile
-.issue-nav-element {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-//Nav Widths
-.nav-mark {
-  width: 70px;
-}
-.nav-issues {
-  width: 300px;
-}
-.nav-social {
-  width: 100px;
-  .ss-icon {
-    font-size: 18px;
-    color: $light-gray;
-    &:hover {
-      color: darken($light-gray, 10%);
-      text-decoration: none;
-    }
-  }
-}
-.nav-mark, .nav-issues, .nav-player {
-  border-right: 1px solid $light-gray;
-}
-
-.nav-issues a {
-  color: $dark-gray;
-  &:hover {
-    color: $dark-gray;
-    text-decoration: none;
-  }
-}
-
-.toggle-down {
-  width: 12px;
-  margin-left: 15px;
-  fill: $dark-gray;
-}
 
 //Hero
 .issue-header {
-  height: 80vh;
+  height: 100vh;
 }
 
 //Backgrounds
 .woodsman {
   background: url(../journal/woodsman/images/woodsman-header.jpg) no-repeat;
+  background-position: center bottom;
 }
 
 //Feature Meta
 .feature-meta {
-  border-bottom: 1px solid $light-gray;
+  // border-bottom: 1px solid $light-gray;
   border-top: 1px solid $light-gray;
 }
 
 .feature-number {
     border-radius: 50%;
     width: 20px;
+    height: 100%;
     height: 20px;
     padding: 8px;
     background: #fff;
@@ -118,13 +51,6 @@
   width: 150px;
   }
   @media screen and (max-width: $breakpoint-iphone) {
-    .float-image {
-      float: none;
-      padding: 0;
-      width: 110%;
-      margin-right: -15px;
-      margin-left: -15px;
-    }
     .issue-wrapper {
       margin: 0;
     }

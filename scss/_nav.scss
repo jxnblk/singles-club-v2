@@ -1,7 +1,3 @@
-
-.menu-container {
-}
-
 .site-wrapper {
     position: relative;
     overflow: hidden;
@@ -33,4 +29,74 @@
 .site-wrapper.show-nav .site-canvas {
     -webkit-transform: translateX(300px);
     transform: translateX(300px);
+}
+
+//Issue Nav Bar
+.issue-nav {
+  height: 70px;
+  display: table;
+  width: 100%;
+}
+
+.mark-sm {
+  width: 30px;
+  padding-left: 22px;
+  padding-top: 10px;
+  fill: $white;
+}
+
+//Creates linking Singles Club mark in NAV
+.nav-home-button {
+  cursor: pointer;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $white !important;
+    background-color: $light-gray;
+  }
+}
+//Creates table-cell that doesn't break down to full width on mobile
+.issue-nav-element {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.nav-mark {
+  width: 70px;
+}
+
+.nav-issues {
+  width: 300px;
+}
+
+.nav-social {
+  width: 100px;
+  .ss-icon {
+    font-size: 18px;
+    color: $dark-gray;
+    &:hover {
+      color: darken($light-gray, 10%);
+      text-decoration: none;
+    }
+  }
+}
+.nav-mark, .nav-issues, .nav-player {
+  border-right: 1px solid $dark-gray;
+}
+
+.nav-issues a {
+  color: $dark-gray;
+  &:hover {
+    color: $dark-gray;
+    text-decoration: none;
+  }
+}
+
+.toggle-down {
+  width: 12px;
+  margin-left: 15px;
+  fill: $dark-gray;
 }

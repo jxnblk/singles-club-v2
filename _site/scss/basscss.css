@@ -423,9 +423,6 @@ body {
 
   .mobile-center {
     text-align: center; } }
-@media screen and (max-width: 768px) {
-  .ipad-hide {
-    display: none !important; } }
 .form {
   font-size: 1rem; }
   .form .field,
@@ -562,80 +559,20 @@ body {
   padding: 0.1875rem 0.75rem;
   line-height: 1.75rem; }
 
-.issue-wrapper {
-  background: #fff;
-  margin-right: 5%;
-  margin-left: 5%;
-  margin-top: 5%; }
-
-.issue-nav {
-  height: 70px;
-  border-bottom: 1px solid #e2e2e2;
-  display: table;
-  width: 100%; }
-
-.mark-sm {
-  width: 30px;
-  padding-left: 22px;
-  padding-top: 10px;
-  fill: #333333; }
-
-.nav-home-button {
-  cursor: pointer;
-  border: none;
-  -webkit-appearance: none;
-  appearance: none; }
-  .nav-home-button:hover, .nav-home-button:focus {
-    text-decoration: none;
-    color: #333333 !important;
-    background-color: #f7f7f7; }
-
-.issue-nav-element {
-  display: table-cell;
-  vertical-align: middle; }
-
-.nav-mark {
-  width: 70px; }
-
-.nav-issues {
-  width: 300px; }
-
-.nav-social {
-  width: 100px; }
-  .nav-social .ss-icon {
-    font-size: 18px;
-    color: #e2e2e2; }
-    .nav-social .ss-icon:hover {
-      color: #c9c9c9;
-      text-decoration: none; }
-
-.nav-mark, .nav-issues, .nav-player {
-  border-right: 1px solid #e2e2e2; }
-
-.nav-issues a {
-  color: #333333; }
-  .nav-issues a:hover {
-    color: #333333;
-    text-decoration: none; }
-
-.toggle-down {
-  width: 12px;
-  margin-left: 15px;
-  fill: #333333; }
-
 .issue-header {
-  height: 80vh; }
+  height: 100vh; }
 
 .woodsman {
-  background: url(../journal/woodsman/images/woodsman-header.jpg) no-repeat; }
+  background: url(../journal/woodsman/images/woodsman-header.jpg) no-repeat;
+  background-position: center bottom; }
 
 .feature-meta {
-  border-bottom: 1px solid #e2e2e2;
   border-top: 1px solid #e2e2e2; }
 
 .feature-number {
   border-radius: 50%;
   width: 20px;
+  height: 100%;
   height: 20px;
   padding: 8px;
   background: #fff;
@@ -654,13 +591,6 @@ body {
   .nav-issues {
     width: 150px; } }
 @media screen and (max-width: 768px) and (max-width: 322px) {
-  .float-image {
-    float: none;
-    padding: 0;
-    width: 110%;
-    margin-right: -15px;
-    margin-left: -15px; }
-
   .issue-wrapper {
     margin: 0; }
 
@@ -903,48 +833,6 @@ body {
 .table-cell-bottom {
   vertical-align: bottom; }
 
-.nav {
-  line-height: 2.25rem; }
-  .nav > a,
-  .nav .nav-item {
-    display: block;
-    line-height: inherit;
-    white-space: nowrap; }
-  .nav > a {
-    padding-right: 0.75rem;
-    padding-left: 0.75rem; }
-
-.mobile-nav-table {
-  display: table; }
-  .mobile-nav-table > a,
-  .mobile-nav-table .nav-item {
-    display: table-cell;
-    vertical-align: middle; }
-
-@media (min-width: 768px) {
-  .nav-table {
-    display: table; }
-    .nav-table > a,
-    .nav-table .nav-item {
-      display: table-cell;
-      vertical-align: middle; } }
-.nav-table-fixed {
-  table-layout: fixed; }
-
-.nav-item-px {
-  padding-right: 0.75rem;
-  padding-left: 0.75rem; }
-
-.nav-big {
-  line-height: 3rem; }
-
-.nav-small {
-  line-height: 1.75rem; }
-
-.nav-flush {
-  margin-right: -0.75rem;
-  margin-left: -0.75rem; }
-
 .site-wrapper {
   position: relative;
   overflow: hidden;
@@ -972,6 +860,60 @@ body {
 .site-wrapper.show-nav .site-canvas {
   -webkit-transform: translateX(300px);
   transform: translateX(300px); }
+
+.issue-nav {
+  height: 70px;
+  display: table;
+  width: 100%; }
+
+.mark-sm {
+  width: 30px;
+  padding-left: 22px;
+  padding-top: 10px;
+  fill: white; }
+
+.nav-home-button {
+  cursor: pointer;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none; }
+  .nav-home-button:hover, .nav-home-button:focus {
+    text-decoration: none;
+    color: white !important;
+    background-color: #e2e2e2; }
+
+.issue-nav-element {
+  display: table-cell;
+  vertical-align: middle; }
+
+.nav-mark {
+  width: 70px; }
+
+.nav-issues {
+  width: 300px; }
+
+.nav-social {
+  width: 100px; }
+  .nav-social .ss-icon {
+    font-size: 18px;
+    color: #333333; }
+    .nav-social .ss-icon:hover {
+      color: #c9c9c9;
+      text-decoration: none; }
+
+.nav-mark, .nav-issues, .nav-player {
+  border-right: 1px solid #333333; }
+
+.nav-issues a {
+  color: #333333; }
+  .nav-issues a:hover {
+    color: #333333;
+    text-decoration: none; }
+
+.toggle-down {
+  width: 12px;
+  margin-left: 15px;
+  fill: #333333; }
 
 @font-face {
   font-family: 'LydianBT-Italic';
@@ -1194,7 +1136,7 @@ html:hover [class^="ss-"] {
 
 body {
   color: #333333;
-  background-color: #061310; }
+  background-color: black; }
 
 a {
   color: #3b00cc;
@@ -1264,7 +1206,7 @@ a {
   padding-left: 0;
   border-right-style: solid;
   border-width: 2px;
-  border-color: #061310; }
+  border-color: #111111; }
 
 .issue-label {
   float: right;
@@ -1329,10 +1271,10 @@ a {
     float: none;
     margin-right: 30px; } }
 .white {
-  color: #f7f7f7; }
+  color: white; }
 
 .black {
-  color: #061310; }
+  color: black; }
 
 .light-gray {
   color: #e2e2e2; }
@@ -1382,11 +1324,14 @@ a {
 .bg-orange {
   background-color: #ff3000; }
 
-.bg-off-black, .bg-black {
-  background-color: #061310; }
+.bg-black {
+  background-color: black; }
+
+.bg-off-black {
+  background-color: #111111; }
 
 .bg-off-white, .bg-white {
-  background-color: #f7f7f7; }
+  background-color: white; }
 
 .link-dark-gray a {
   color: #333333; }
@@ -1495,79 +1440,3 @@ a {
   background-color: #a8a8a7;
   cursor: text;
   text-transform: uppercase; }
-
-.nav a:hover, .nav a:focus {
-  text-decoration: none; }
-
-.nav-dark > a {
-  color: white; }
-  .nav-dark > a:hover, .nav-dark > a:focus {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.25); }
-.nav-dark .active {
-  background-color: rgba(0, 0, 0, 0.375); }
-
-.nav-light > a {
-  color: #333333; }
-  .nav-light > a:hover, .nav-light > a:focus {
-    color: #333333;
-    background-color: rgba(0, 0, 0, 0.125); }
-.nav-light .active {
-  background-color: rgba(0, 0, 0, 0.25); }
-
-.nav-borders {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #cccccc; }
-  .nav-borders > a {
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-top-color: #cccccc; }
-    .nav-borders > a:first-child {
-      border-top: 0; }
-  .nav-borders .active {
-    color: #333333; }
-
-.nav-pills > a {
-  border-radius: 0; }
-  .nav-pills > a:hover, .nav-pills > a:focus {
-    background-color: rgba(59, 0, 204, 0.125); }
-.nav-pills .active {
-  color: white;
-  background-color: #3b00cc; }
-  .nav-pills .active:hover, .nav-pills .active:focus {
-    background-color: #2c0099; }
-
-.nav-segments {
-  box-shadow: inset 0 0 0 1px #3b00cc;
-  border-radius: 0; }
-  .nav-segments > a {
-    border-right: 1px solid #3b00cc;
-    border-bottom: 1px solid #3b00cc; }
-    .nav-segments > a:hover, .nav-segments > a:focus {
-      background-color: rgba(59, 0, 204, 0.125); }
-    .nav-segments > a:first-child {
-      border-radius: 0 0 0 0; }
-    .nav-segments > a:last-child {
-      border-right: 0;
-      border-radius: 0 0 0 0; }
-  .nav-segments .active {
-    color: white;
-    background-color: #3b00cc; }
-    .nav-segments .active:hover, .nav-segments .active:focus {
-      background-color: #2c0099; }
-  .nav-segments .disabled {
-    color: rgba(51, 51, 51, 0.5); }
-    .nav-segments .disabled:hover, .nav-segments .disabled:focus {
-      color: rgba(51, 51, 51, 0.5);
-      background-color: transparent; }
-
-.nav-tabs > a {
-  border-radius: 0 0 0 0;
-  border-bottom: 1px solid #cccccc; }
-  .nav-tabs > a:hover {
-    background-color: rgba(0, 0, 0, 0.125); }
-.nav-tabs .active {
-  background-color: white;
-  border: 1px solid #cccccc;
-  border-bottom-color: transparent; }
