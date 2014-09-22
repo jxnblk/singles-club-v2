@@ -133,30 +133,38 @@ h6, .h6, small {
   letter-spacing: 0.3em; }
 
 body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-family: "aktiv-grotesk-std", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
   line-height: 1.75rem;
   letter-spacing: 0.05em;
   -webkit-text-size-adjust: none;
   text-size-adjust: none; }
 
-.sans-serif, .sans-serif-light, .lydian-italic, .lydian, .lydian-bold {
+.pull-quote h2 {
+  font-family: "leitura-news", "TimesNewRoman", "Times New Roman", serif;
+  font-weight: 300;
+  font-style: italic;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none; }
+
+.sans-serif, .sans-serif-light, .lydian-italic, .lydian, .lydian-bold, .serif {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
   text-size-adjust: none; }
 
 .sans-serif {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-family: "aktiv-grotesk-std", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
   font-style: normal; }
 
 .sans-serif-light {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "aktiv-grotesk-std", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-style: normal; }
 
 .serif, p {
-  font-family: "TimesNewRoman", "Times New Roman", Times, Baskerville, Georgia, serif !important;
+  font-family: "leitura-news", "TimesNewRoman", "Times New Roman", serif !important;
   font-style: normal !important;
   line-height: 32px !important; }
 
@@ -354,11 +362,13 @@ body {
 .pl3 {
   padding-left: 2rem; }
 
-.image-right-p3 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  padding-left: 3rem; }
+.image-set {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
+@media screen and (max-width: 768px) {
+  .clear-padding {
+    padding: 0 !important; } }
 .inline {
   display: inline; }
 
@@ -569,6 +579,9 @@ body {
 .feature-meta {
   border-top: 1px solid #e2e2e2; }
 
+.meta h5 {
+  font-size: 12px !important; }
+
 .feature-number {
   border-radius: 50%;
   width: 20px;
@@ -605,8 +618,8 @@ body {
     width: 60px;
     padding-left: 2px; } }
 .button {
-  font-family: 'Apercu Medium', 'Helvetica-Medium', sans-serif;
-  font-weight: 600;
+  font-family: "aktiv-grotesk-std", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
   font-style: normal;
   text-decoration: none;
   text-align: center;
@@ -626,8 +639,12 @@ body {
   letter-spacing: 0.05em; }
   .button:hover, .button:focus {
     text-decoration: none; }
-  .button h4 {
-    margin-top: 0.3rem; }
+
+.button a {
+  color: #ffffff;
+  text-decoration: none; }
+  .button a:hover, .button a:focus {
+    color: #ffffff; }
 
 .button-custom {
   font-family: 'Apercu Medium', 'Helvetica-Medium', sans-serif;
@@ -868,7 +885,7 @@ body {
 
 .mark-sm {
   width: 30px;
-  padding-left: 22px;
+  padding-left: 21px;
   padding-top: 10px;
   fill: white; }
 
@@ -1434,6 +1451,14 @@ a {
   .button-red:hover {
     color: #fff;
     background-color: #99001f; }
+
+.button-purple {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #6600ff; }
+  .button-purple:hover {
+    color: #fff;
+    background-color: #3d0099; }
 
 .button-inactive {
   color: #fff;

@@ -4,9 +4,10 @@
 $space: 1rem !default;
 
 // Typography
-$font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-family: "aktiv-grotesk-std", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $line-height: 1.5 !default;
 $line-height-heading: 1.25 !default;
+$lydian-italic: LydianBT-Italic, georgia;
 
 // Type Scale
 $h1: 60px !default;
@@ -26,9 +27,9 @@ $desktop-h5: 18px !default;
 $desktop-h6: 13px !default;
 
 // Typography
-$sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$sans-serif-light: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif: "TimesNewRoman", "Times New Roman", Times, Baskerville, Georgia, serif;
+$sans-serif: "aktiv-grotesk-std", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sans-serif-light: "aktiv-grotesk-std", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif: "leitura-news", "TimesNewRoman", "Times New Roman", serif;
 
 //line height
 $lh1: 1em;
@@ -75,6 +76,7 @@ $red: #ff0033 !default;
 $yellow: #ffb600 !default;
 $green: #00ffaa !default;
 $orange: #ff3000 !default;
+$purple: #6600FF !default;
 
 // Alpha blacks for UI elements
 $darken-1: rgba(#000,.125) !default;

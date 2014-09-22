@@ -75,15 +75,24 @@ h6, .h6, small { font-size: $h6; }
 
 //Typefaces
 body {
-  font-family: $sans-serif-light;
-  font-weight: 300;
+  font-family: $sans-serif;
+  font-weight: 400;
   line-height: 1.75rem;
   letter-spacing: $ls05;
   -webkit-text-size-adjust: none;
           text-size-adjust: none;
 }
 
-.sans-serif, .sans-serif-light, .lydian-italic, .lydian, .lydian-bold {
+.pull-quote h2 {
+  font-family: $serif;
+  font-weight: 300;
+  font-style: italic;
+  -webkit-font-smoothing:antialiased;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+.sans-serif, .sans-serif-light, .lydian-italic, .lydian, .lydian-bold, .serif {
   -webkit-font-smoothing:antialiased;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
@@ -91,7 +100,7 @@ body {
 
 .sans-serif {
   font-family: $sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -108,7 +117,7 @@ body {
 }
 
 .lydian-italic {
-  font-family: LydianBT-Italic, georgia;
+  font-family: $lydian-italic;
   font-weight: lighter;
 }
 

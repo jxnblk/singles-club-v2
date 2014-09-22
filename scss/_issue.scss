@@ -5,7 +5,6 @@
 //   margin-top:5%;
 // }
 
-
 //Hero
 .issue-header {
   height: 100vh;
@@ -21,6 +20,10 @@
 .feature-meta {
   // border-bottom: 1px solid $light-gray;
   border-top: 1px solid $light-gray;
+}
+
+.meta h5 {
+  font-size: 12px !important;
 }
 
 .feature-number {

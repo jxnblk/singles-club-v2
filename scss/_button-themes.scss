@@ -41,6 +41,17 @@
   &:focus {}
 }
 
+.button-purple {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: $purple;
+  &:hover {
+    color: #fff;
+    background-color: darken($purple, 20%);
+  }
+  &:focus {}
+}
+
 .button-inactive {
   color: #fff;
   background-color: $mid-gray;
