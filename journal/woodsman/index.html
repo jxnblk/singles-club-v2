@@ -5,8 +5,11 @@ socialimage: "images/smallsur_facebook.jpg"
 ---
 {% include head.html %}
 <body>
+    <!--Issue Highlight-->
     <style>
       .bg-highlight { background-color: #6600FF; }
+      .bg-feature-2 { background-color: #f2effe; }
+      .feature-2-hightlight { color: #1E005F; border-color:#1E005F ;}
       .border-highlight { border-color: #6600FF; }
       body a { color: #6600FF;}
     </style>
@@ -14,7 +17,6 @@ socialimage: "images/smallsur_facebook.jpg"
     <!--HEADER-->
       <div class="issue-header woodsman bg-cover bg-center table mobile-table">
         <div class="table-cell mobile-table-cell center white">
-          <h4 class="caps"> Issue 3 </h4>
           <h1 class="h1">Woodsman</h1>
           <div class="button button-purple mt2 white">
             <a href="#">Listen & Begin</a>
@@ -31,55 +33,57 @@ socialimage: "images/smallsur_facebook.jpg"
         </div>
       </div>
     <!--NAV-->
-    <div class="issue-nav bg-off-black">
-          <div class="issue-nav-element nav-home-button nav-mark bg-highlight">
-            <div class="mark-sm">
-            <a href="#">
-              <svg version="1.1" mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                   viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve" fill="#fff">
-                <path d="M553.5,515.4c2.9-78.6-40.8-131-142.7-174.7l-81.5-32c-46.6-20.4-87.4-40.8-104.8-58.2c-17.5-14.6-29.1-37.9-26.2-64.1
-                  c0-46.6,29.1-67,87.4-64.1c17.5,0,32,2.9,49.5,8.7c67,23.3,113.6,96.1,145.6,192.2c2.9,5.8,5.8,8.7,8.7,11.6c2.9,0,2.9,0,2.9-2.9
-                  c2.9,0,2.9-2.9,2.9-8.7V122.3c0-5.8-2.9-11.6-8.7-11.6c-5.8,0-8.7,5.8-8.7,8.7c-2.9,5.8-5.8,8.7-17.5,8.7c-5.8,0-11.6-8.7-32-14.6
-                  c-67-14.6-96.1-20.4-131-23.3C163.3,87.4,61.4,168.9,58.5,279.5c0,69.9,46.6,122.3,157.2,168.9l84.4,34.9
-                  c87.4,37.9,119.4,72.8,119.4,119.4c-2.9,49.5-37.9,67-99,64.1c-20.4,0-40.8,2.9-67-5.8c-32-11.6-58.2-32-84.4-64.1
-                  C122.6,538.7,93.4,480.4,76,419.3c0-5.8-5.8-11.6-8.7-11.6s-2.9,0-2.9,2.9c-5.8,2.9-5.8,5.8-5.8,11.6v253.3c0,5.8,2.9,8.7,5.8,11.6
-                  c0,0,0,0,2.9,0s5.8-2.9,8.7-8.7c2.9-8.7,11.6-11.6,23.3-11.6c8.7,0,11.6,2.9,37.9,8.7c72.8,17.5,136.9,23.3,183.4,26.2
-                  C445.8,704.6,550.6,628.9,553.5,515.4z"/>
-              </svg>
+    <div class="issue-nav-fixed">
+      <div class="issue-nav bg-off-black">
+            <div class="issue-nav-element nav-home-button nav-mark bg-highlight">
+              <div class="mark-sm">
+              <a href="#">
+                <svg version="1.1" mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve" fill="#fff">
+                  <path d="M553.5,515.4c2.9-78.6-40.8-131-142.7-174.7l-81.5-32c-46.6-20.4-87.4-40.8-104.8-58.2c-17.5-14.6-29.1-37.9-26.2-64.1
+                    c0-46.6,29.1-67,87.4-64.1c17.5,0,32,2.9,49.5,8.7c67,23.3,113.6,96.1,145.6,192.2c2.9,5.8,5.8,8.7,8.7,11.6c2.9,0,2.9,0,2.9-2.9
+                    c2.9,0,2.9-2.9,2.9-8.7V122.3c0-5.8-2.9-11.6-8.7-11.6c-5.8,0-8.7,5.8-8.7,8.7c-2.9,5.8-5.8,8.7-17.5,8.7c-5.8,0-11.6-8.7-32-14.6
+                    c-67-14.6-96.1-20.4-131-23.3C163.3,87.4,61.4,168.9,58.5,279.5c0,69.9,46.6,122.3,157.2,168.9l84.4,34.9
+                    c87.4,37.9,119.4,72.8,119.4,119.4c-2.9,49.5-37.9,67-99,64.1c-20.4,0-40.8,2.9-67-5.8c-32-11.6-58.2-32-84.4-64.1
+                    C122.6,538.7,93.4,480.4,76,419.3c0-5.8-5.8-11.6-8.7-11.6s-2.9,0-2.9,2.9c-5.8,2.9-5.8,5.8-5.8,11.6v253.3c0,5.8,2.9,8.7,5.8,11.6
+                    c0,0,0,0,2.9,0s5.8-2.9,8.7-8.7c2.9-8.7,11.6-11.6,23.3-11.6c8.7,0,11.6,2.9,37.9,8.7c72.8,17.5,136.9,23.3,183.4,26.2
+                    C445.8,704.6,550.6,628.9,553.5,515.4z"/>
+                </svg>
+              </a>
+              </div>
+            </div>
+          <div class="issue-nav-element nav-issues nav-home-button px2">
+            <a href="#" id="toggle-nav">
+            <h4 class="left white">Issue 3: Woodsman</h4>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 1.9 1.4" enable-background="new 0 0 1.9 1.4" xml:space="preserve" class="toggle-down">
+              <polygon points="1.9,0 1,1.4 0,0 "/>
+            </svg>
+
             </a>
+          </div>
+          <div class="issue-nav-element nav-player px2 white">
+            <h5>Side A: 'Further'</h5>
+          </div>
+          <div class="issue-nav-element nav-social px2 center">
+            <div style="margin-top:9px">
+              <a href="https://twitter.com/singlesclubfm" class="ss-icon">twitter</a>
+              <a href="http://www.facebook.com/singlesclubfm" class="ss-icon pl2">facebook</a>
             </div>
           </div>
-        <div class="issue-nav-element nav-issues nav-home-button px2">
-          <a href="#" id="toggle-nav">
-          <h4 class="left white">Issue 3: Woodsman</h4>
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 1.9 1.4" enable-background="new 0 0 1.9 1.4" xml:space="preserve" class="toggle-down">
-            <polygon points="1.9,0 1,1.4 0,0 "/>
-          </svg>
-
-          </a>
-        </div>
-        <div class="issue-nav-element nav-player px2 white">
-          <h5>Side A: 'Further'</h5>
-        </div>
-        <div class="issue-nav-element nav-social px2 center">
-          <div style="margin-top:9px">
-            <a href="https://twitter.com/singlesclubfm" class="ss-icon">twitter</a>
-            <a href="http://www.facebook.com/singlesclubfm" class="ss-icon pl2">facebook</a>
+      </div>
+      <!--Sub Nav-->
+      <div id="issue-sub" class="bg-highlight py3">
+        <div class="table table-fixed white">
+          <div class="table-cell center">
+            <h4>Issue 1: Daniel Bachman</h4>
           </div>
-        </div>
-    </div>
-    <!--Sub Nav-->
-    <div id="issue-sub" class="bg-highlight py3">
-      <div class="table table-fixed white">
-        <div class="table-cell center">
-          <h4>Issue 1: Daniel Bachman</h4>
-        </div>
-        <div class="table-cell center">
-          <h4>Issue 2: Small Sur</h4>
-        </div>
-        <div class="table-cell center">
-          <h4>Issue 3: Woodsman</h4>
+          <div class="table-cell center">
+            <h4>Issue 2: Small Sur</h4>
+          </div>
+          <div class="table-cell center">
+            <h4>Issue 3: Woodsman</h4>
+          </div>
         </div>
       </div>
     </div>
@@ -123,6 +127,8 @@ socialimage: "images/smallsur_facebook.jpg"
       <div class="row">
         <div class="col col-8 col-offset-2">
           <p class="py2"> Soon enough, people were talking and that summer tour was largely a coming out party for the band. The June 18th bill, put together by infamous Brooklyn promoter Todd P, would see Woodsman playing alongside Wild Nothing, Ducktails, and Velvet Davenport on a small stage, down a flight of stairs in a graffiti-covered basement. It was nothing short of a perfect storm and Woodsman would taste New York City for the first time. </p>
+
+          <img src="images/woodsman-download.jpg" class="fit col-6 right p2 clear-padding">
 
           <p class="py2"> Ambient agency, glowing yet restrained, Woodsman’s art was about long form storytelling, ritualistic and compiled. The band would meditate with their instruments, paying close attention to one another’s subtle changes and vulnerabilities while just as soon blaring white noise in an indifference that was their communion. “The risk taking element of this band is pretty much what it’s all about,” guitarist Trevor Peterson adds. Playing live added extra pressure. In the yellow spotlights of Monster Island, Woodsman were immersed in their craft, improvising over structured jams that were the labor of love they had cultivated in their house back West. </p>
 
@@ -185,15 +191,84 @@ socialimage: "images/smallsur_facebook.jpg"
         </div>
       </div>
     </div>
-    <div class="image-set px4">
+    <div class="image-set px4 clear-padding">
       <img src="images/woodsman-live-2.jpg" class="full-width">
     </div>
-    <div class="container px2">
+    <div class="container px2 pb6">
       <div class="row">
         <div class="col col-8 col-offset-2">
           <p class="py2"> From bare solo acts like Speculator and Eola, to the desert psychedelia of Tjutjuna, the night resembled in many ways the spirit that Woodsman brought to New York City, as if a tequila-coated brain could come on stage at any point, pick up a hot patch cable, and join the drone communion. </p>
 
           <p class="py2"> Playing in front of the window, their long hair blurred in clamp lights reflected on the glass, Woodsman melting even further into the city lights. The clock ached, the night grew long, and everyone kept asking for more. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Feature 2 -->
+  <div class="issue-wrapper bg-feature-2 py4">
+    <div class="container px2">
+      <div class="row py6">
+        <div class="col col-5">
+          <div class="row center">
+            <img src="images/fire-talk-with-me.jpg">
+          </div>
+          <div class="row py2 mt3 feature-2-hightlight">
+            <div class="mobile-col mobile-col-3 col-2">
+              <div class="feature-number feature-2-hightlight">2</div>
+            </div>
+            <div class="mobile-col mobile-col-9 col-10 pt2 caps lydian-bold feature-2-hightlight">
+              <h6>Words by: Jeffrey Silverstein</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col col-7 feature-2-hightlight italic serif pt2">
+          <h3> Starting a record label is easy. Running and maintaining one however, whilst navigating the ripe and often overcrowded beast that is our current music industry is an entirely different story. Within the deep web of underground and DIY communities, label longevity stems not only from those who possess a deep love of music, but those who are able to harmonize with a business that is oftentimes frugal. </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-10 col-offset-1 feature-2-hightlight">
+          <p class="py2"> Fire Talk records, started as a means to give clout to a Woodsman CDR released prior to an early tour, is now a mainstay in the psych/drone/ambient bevy. While speaking with Trevor in his Greenpoint apartment which doubles as Fire Talk HQ, it becomes evident why the label was able to recently celebrate it's fifth year of existence. </p>
+
+          <img src="images/firetalk.jpg" class="fit col-6 right p2 clear-padding">
+
+          <p class="py2"> Despite an obvious overlap between Woodsman and Fire Talk, Trevor described his relationship with the two. "The band is an art project. It doesn't have anything to do with commerce. They're completely separate entities in my mind." It is exactly this distinction however that has allowed both to grow into fully realized projects,Trevor bringing a healthy life force into each. For being the most mellow dude I've ever met, he's also deeply focused and driven, recognizing the challenges of running a business so often discounted by smaller labels. </p>
+
+          <p class="py2"> "There's no reason why a label can't function like a Dead Oceans or a big label, but also be run by one-dude in apartment," he adds when describing his mystic view of running a label. Surrounded every day by the machine of the music industry and having spent time working with those types of labels, he's 'not that far removed to see it.' </p>
+
+          <p class="py2"> This perspective and experience is what makes him such an alluring label-head.  Regardless of  working with 'deep homies' or helping a Japanese ambient folk-artist assemble her first release, there is an unbridled openness to everything he touches. 'Me having that stance, I can sense when someone needs a little help, when they're so green, so talented, but just can't put it together.'  He's also cognisant of when to take a step back if 'a band as a really clear idea of every aspect of their artistic identity.' </p>
+
+          <p class="py2"> Speaking on the influence of technology, Trevor raises some critical points. 'The art side of things is now completely intertwined with the music side...back in the day when you bought a walkman, it was just a walkman, didn't matter the brand...you still had to buy the tape that went in the walkman.'  With the advent of apps from  Spotify, Rdio, etc., we often forget that now 'there's nothing else you have to do but search.' </p>
+
+          <div class="center">
+            <img src="images/firetalk-quote.jpg" class="fit py2">
+          </div>
+
+          <p class="py2"> "The music industry has niched itself off," he hypothesizes. Rather than become discouraged by disheartening statistics about streaming royalties and the like, Trevor manages to stay hopeful. 'All I know is that at the end of the day, digital revenue is revenue that you would be foolish to not try and capitalize on. It's people, it's ears, and a lot of people are consuming music that way.' </p>
+
+          <p class="py2"> 'Running a label is hard,' he laughs. Here's to another five years of Fire Talk. </p>
+        </div>
+      </div>
+      <div class="row py4">
+        <div class="col col-10 col-offset-1 bg-highlight white">
+          <div class="row pt2">
+            <div class="col col-12">
+              <h5> A few of our favorite Fire Talk releases:</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-3">
+              <img src="images/firetalk-babybirds.jpg" class="fit py2">
+            </div>
+            <div class="col col-3">
+              <img src="images/firetalk-campfires.jpg" class="fit py2">
+            </div>
+            <div class="col col-3">
+              <img src="images/firetalk-katrina.jpg" class="fit py2">
+            </div>
+            <div class="col col-3">
+              <img src="images/firetalk-tjutjuna.jpg" class="fit py2">
+            </div>
+          </div>
         </div>
       </div>
     </div>

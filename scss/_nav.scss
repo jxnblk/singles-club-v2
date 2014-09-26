@@ -38,6 +38,13 @@
   width: 100%;
 }
 
+.issue-nav-fixed {
+  position:fixed;
+  width: 100%;
+  z-index: 9999;
+  top:0;
+}
+
 .mark-sm {
   width: 30px;
   padding-left: 21px;

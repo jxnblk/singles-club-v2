@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.25;
+  line-height: 1.5;
   font-weight: 300; }
 
 h1, .h1 {
@@ -588,7 +588,6 @@ body {
   height: 100%;
   height: 20px;
   padding: 8px;
-  background: #fff;
   border: 1px solid #e2e2e2;
   color: #e2e2e2;
   text-align: center;
@@ -882,6 +881,12 @@ body {
   height: 70px;
   display: table;
   width: 100%; }
+
+.issue-nav-fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  top: 0; }
 
 .mark-sm {
   width: 30px;
