@@ -20,7 +20,7 @@
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
   <!-- Angular JS + Plangular -->
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
-  <script src="/../js/plangular.js"></script>
+  <script src="/../js/ng-plangular.min.js"></script>
   <script src="//use.typekit.net/nbx4wrv.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
 
@@ -74,7 +74,7 @@
 </script>
 </head>
 
-<body>
+<body ng-app="plangular">
     <!--Issue Highlight-->
     <style>
       .bg-highlight { background-color: #6600FF; }
@@ -84,47 +84,56 @@
       body a { color: #6600FF;}
     </style>
   <div class="issue-wrapper bg-white">
+  <div plangular="https://soundcloud.com/singlesclubfm/woodsman-sc003-further">
     <!--HEADER-->
-      <div class="issue-header woodsman bg-cover bg-center table mobile-table">
-        <div class="table-cell mobile-table-cell center white">
-          <h1 class="h1">Woodsman</h1>
-          <div class="button button-purple mt2 white">
-            <a href="#">Listen & Begin</a>
-          </div>
-          <div class="pt3">
-            <div class="meta">
-              <h5>Audio is recommended for this feature. <br>Just hit Listen & Begin.</h5>
+      <div class="issue-header woodsman bg-cover bg-center">
+      <div class="container px2">
+        <div class="table mobile-table" style="height: 100vh;">
+          <div class="table-cell mobile-table-cell center white">
+            <h1 class="h1">Woodsman</h1>
+            <div ng-click="playPause()" class="button button-purple mt2 white">
+              <a href="#">Listen & Begin</a>
             </div>
-            <img src="/images/stereo.svg" alt="Stereo" class="pt2"/>
-            <div class="meta">
-              <h5>SC003</h5>
+            <div class="pt3">
+              <div class="meta">
+                <h5>Audio is recommended for this feature. <br>Just hit Listen & Begin.</h5>
+              </div>
+              <img src="/images/stereo.svg" alt="Stereo" class="pt2"/>
+              <div class="meta">
+                <h5>SC003</h5>
+              </div>
             </div>
           </div>
         </div>
+      </div>
       </div>
     <!--NAV-->
     <div class="issue-nav-fixed">
       <div class="issue-nav bg-off-black">
             <div class="issue-nav-element nav-home-button nav-mark bg-highlight">
-              <div class="mark-sm">
-              <a href="#">
-                <svg version="1.1" mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve" fill="#fff">
-                  <path d="M553.5,515.4c2.9-78.6-40.8-131-142.7-174.7l-81.5-32c-46.6-20.4-87.4-40.8-104.8-58.2c-17.5-14.6-29.1-37.9-26.2-64.1
-                    c0-46.6,29.1-67,87.4-64.1c17.5,0,32,2.9,49.5,8.7c67,23.3,113.6,96.1,145.6,192.2c2.9,5.8,5.8,8.7,8.7,11.6c2.9,0,2.9,0,2.9-2.9
-                    c2.9,0,2.9-2.9,2.9-8.7V122.3c0-5.8-2.9-11.6-8.7-11.6c-5.8,0-8.7,5.8-8.7,8.7c-2.9,5.8-5.8,8.7-17.5,8.7c-5.8,0-11.6-8.7-32-14.6
-                    c-67-14.6-96.1-20.4-131-23.3C163.3,87.4,61.4,168.9,58.5,279.5c0,69.9,46.6,122.3,157.2,168.9l84.4,34.9
-                    c87.4,37.9,119.4,72.8,119.4,119.4c-2.9,49.5-37.9,67-99,64.1c-20.4,0-40.8,2.9-67-5.8c-32-11.6-58.2-32-84.4-64.1
-                    C122.6,538.7,93.4,480.4,76,419.3c0-5.8-5.8-11.6-8.7-11.6s-2.9,0-2.9,2.9c-5.8,2.9-5.8,5.8-5.8,11.6v253.3c0,5.8,2.9,8.7,5.8,11.6
-                    c0,0,0,0,2.9,0s5.8-2.9,8.7-8.7c2.9-8.7,11.6-11.6,23.3-11.6c8.7,0,11.6,2.9,37.9,8.7c72.8,17.5,136.9,23.3,183.4,26.2
-                    C445.8,704.6,550.6,628.9,553.5,515.4z"/>
-                </svg>
-              </a>
+              <div class="table mobile-table">
+                <div class="table-cell mobile-table-cell">
+                  <div class="mark-sm">
+                  <a href="#">
+                    <svg version="1.1" mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve" fill="#fff">
+                      <path d="M553.5,515.4c2.9-78.6-40.8-131-142.7-174.7l-81.5-32c-46.6-20.4-87.4-40.8-104.8-58.2c-17.5-14.6-29.1-37.9-26.2-64.1
+                        c0-46.6,29.1-67,87.4-64.1c17.5,0,32,2.9,49.5,8.7c67,23.3,113.6,96.1,145.6,192.2c2.9,5.8,5.8,8.7,8.7,11.6c2.9,0,2.9,0,2.9-2.9
+                        c2.9,0,2.9-2.9,2.9-8.7V122.3c0-5.8-2.9-11.6-8.7-11.6c-5.8,0-8.7,5.8-8.7,8.7c-2.9,5.8-5.8,8.7-17.5,8.7c-5.8,0-11.6-8.7-32-14.6
+                        c-67-14.6-96.1-20.4-131-23.3C163.3,87.4,61.4,168.9,58.5,279.5c0,69.9,46.6,122.3,157.2,168.9l84.4,34.9
+                        c87.4,37.9,119.4,72.8,119.4,119.4c-2.9,49.5-37.9,67-99,64.1c-20.4,0-40.8,2.9-67-5.8c-32-11.6-58.2-32-84.4-64.1
+                        C122.6,538.7,93.4,480.4,76,419.3c0-5.8-5.8-11.6-8.7-11.6s-2.9,0-2.9,2.9c-5.8,2.9-5.8,5.8-5.8,11.6v253.3c0,5.8,2.9,8.7,5.8,11.6
+                        c0,0,0,0,2.9,0s5.8-2.9,8.7-8.7c2.9-8.7,11.6-11.6,23.3-11.6c8.7,0,11.6,2.9,37.9,8.7c72.8,17.5,136.9,23.3,183.4,26.2
+                        C445.8,704.6,550.6,628.9,553.5,515.4z"/>
+                    </svg>
+                  </a>
+                  </div>
+                </div>
               </div>
             </div>
           <div class="issue-nav-element nav-issues nav-home-button px2">
             <a href="#" id="toggle-nav">
-            <h4 class="left white">Issue 3: Woodsman</h4>
+            <h4 class="h5 left white"><span class="issue-3">Issue 3: </span>Woodsman</h4>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 1.9 1.4" enable-background="new 0 0 1.9 1.4" xml:space="preserve" class="toggle-down">
               <polygon points="1.9,0 1,1.4 0,0 "/>
@@ -133,7 +142,22 @@
             </a>
           </div>
           <div class="issue-nav-element nav-player px2 white">
-            <h5>Side A: 'Further'</h5>
+              <div class="table mobile-table full-width">
+                <div class="track-title">
+                  <h4>Side A: 'Further'</h4>
+                </div>
+                  
+                  <div class="player-controls">
+                    <button class="no-wrap play-pause" ng-click="playPause()">
+                      <svg ng-if="player.playing != track" viewBox=“0 0 32 32” plangular-icon="play" class="popin"></svg>
+                      <svg ng-if="player.playing == track" viewBox=“0 0 32 32” plangular-icon="pause" class="popin"></svg>
+                    </button>
+                  </div>
+                  <div class="player full-width">
+                    <progress class="bg-highlight" value="{{ currentTime / duration || 0 }}" ng-click="seek($event)">{{ currentTime / duration }}</progress>
+                  </div>
+                  
+              </div>
           </div>
           <div class="issue-nav-element nav-social px2 center">
             <div style="margin-top:9px">
@@ -157,6 +181,7 @@
         </div>
       </div>
     </div>
+    </div>
 
     <div class="container px2">
       <!--FEATURE 1-->
@@ -169,14 +194,14 @@
               <div class="feature-number">1</div>
             </div>
             <div class="mobile-col mobile-col-10 col-11 pt2 light-gray caps lydian-bold">
-              <h6>Words by: Mike Sheffield</h6>
+              <h5>Words by: Mike Sheffield</h5>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col col-10 col-offset-1 serif">
-          <h3 class="py2">On June 18th, 2010 Woodsman would play their first show in Brooklyn. The Denver-based band, at the time a quartet, had seen the first half of a monthlong US tour spanning most of the country before heading back to Colorado. It was a crowded summer night in Williamsburg. The air was sticky, anxiously purring, the sun streaked down into a purple-hued gloaming over the East River. They were slated to perform at the Monster Island Basement. </h3>
+          <h2 class="py2 h2">On June 18th, 2010 Woodsman would play their first show in Brooklyn. The Denver-based band, at the time a quartet, had seen the first half of a monthlong US tour spanning most of the country before heading back to Colorado. It was a crowded summer night in Williamsburg. The air was sticky, anxiously purring, the sun streaked down into a purple-hued gloaming over the East River. They were slated to perform at the Monster Island Basement. </h2>
         </div>
       </div>
       <div class="row">
@@ -221,11 +246,9 @@
       </div>
     </div>
     <div class="image-set">
-      <div class="full-width mobile-table table pull-quote" style="background-image:url('images/woodsman-2.jpg'); background-position: center center; background-size: cover;">
-        <div class="container">
-          <div class="table-cell white mobile-table-cell px4 py6">
-            <h2> "Coming to New York meant recording in a studio, not a house. New York meant constantly thinking about money, not just music. It meant living the hustle because the hustle was the only way to survive." </h2>
-          </div>
+      <div class="mobile-table table pull-quote" style="background-image:url('images/woodsman-2.jpg'); background-position: center center; background-size: cover;">
+        <div class="table-cell white mobile-table-cell px4 py6">
+          <p> "Coming to New York meant recording in a studio, not a house. New York meant constantly thinking about money, not just music. It meant living the hustle because the hustle was the only way to survive." </p>
         </div>
       </div>
     </div>

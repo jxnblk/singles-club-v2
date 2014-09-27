@@ -49,6 +49,7 @@
   width: 30px;
   padding-left: 21px;
   padding-top: 10px;
+  padding-right: 21px;
   fill: $white;
 }
 
@@ -105,5 +106,55 @@
 .toggle-down {
   width: 12px;
   margin-left: 15px;
+  margin-top: 10px;
   fill: $dark-gray;
+}
+
+//iPhone only
+
+@media screen and (max-width: 450px) {
+  .toggle-down {
+    fill: $blue;
+  }
+  .player-controls {
+    padding-right: 0;
+    padding-left: 15px;
+  }
+  .nav-player {
+    width: 25px;
+  }
+  .player {
+    display: none;
+  }
+  .track-title {
+    display: none;
+  }
+  .nav-social {
+    display: none;
+  }
+  .player-controls button {
+    margin-left: 1px;
+    margin-top: 2px;
+  }
+  .nav-mark {
+    width: 50px;
+  }
+  .mark-sm {
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .issue-3 {
+    display: none;
+  }
+  .issue-wrapper {
+    margin: 0;
+  }
+  .issue-header {
+    height: 800px;
+  }
+  .nav-issues {
+    width: 150px;
+  }
 }

@@ -12,7 +12,7 @@
 
 //Backgrounds
 .woodsman {
-  background: url(../journal/woodsman/images/woodsman-header.jpg) no-repeat;
+  background-image: url(../journal/woodsman/images/woodsman-header.jpg);
   background-position: center bottom;
 }
 
@@ -36,39 +36,6 @@
     color: $light-gray;
     text-align: center;
     line-height: 20px;
-}
-
-@media screen and (max-width: 890px) {
-
-}
-
-@media screen and (max-width: $breakpoint-mobile) {
-  .issue-wrapper {
-    margin: 0;
-  }
-  .issue-header {
-    height: 800px;
-  }
-  .nav-issues {
-  width: 150px;
-  }
-  @media screen and (max-width: $breakpoint-iphone) {
-    .issue-wrapper {
-      margin: 0;
-    }
-    .nav-player {
-      width: 100%;
-      height: 70px;
-    }
-    .issue-header {
-      height: 480px;
-    }
-    .mark-sm {
-      width: 60px;
-      padding-left: 2px;
-    }
-}
-
 }
 
 

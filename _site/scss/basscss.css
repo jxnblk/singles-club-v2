@@ -34,47 +34,49 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.5;
   font-weight: 300; }
 
-h1, .h1 {
-  font-size: 60px; }
+h1 {
+  font-size: 1.953em; }
 
-h2, .h2 {
-  font-size: 42px; }
+h2 {
+  font-size: 1.563em; }
 
-h3, .h3 {
-  font-size: 32px; }
+h3 {
+  font-size: 1.25em; }
 
-h4, .h4,
-p, dl, ol, ul {
-  font-size: 23px; }
+h4, dl, ol, ul {
+  font-size: 1em; }
 
-h5, .h5 {
-  font-size: 18px;
+p {
+  font-size: 1.25em;
+  line-height: 1.75em; }
+
+h5 {
+  font-size: 0.8em;
   line-height: 1.5em; }
 
-h6, .h6, small {
-  font-size: 13px; }
+h6, small {
+  font-size: 0.64em; }
 
 @media screen and (min-width: 769px) {
   .h1 {
-    font-size: 72px; }
+    font-size: 4em; }
 
   .h2 {
-    font-size: 42px; }
+    font-size: 2.1em;
+    line-height: 1.5em; }
 
   .h3 {
-    font-size: 32px; }
+    font-size: 1.953em; }
 
-  .h4 {
-    font-size: 23px; }
+  .h4, p {
+    font-size: 1.563em;
+    line-height: 1.7em; }
 
   .h5 {
-    font-size: 18px; }
+    font-size: 1.25em; }
 
   .h6 {
-    font-size: 13px; }
-
-  p {
-    font-size: 23px; } }
+    font-size: 1em; } }
 .bold {
   font-weight: bold; }
 
@@ -135,7 +137,6 @@ h6, .h6, small {
 body {
   font-family: "aktiv-grotesk-std", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  line-height: 1.75rem;
   letter-spacing: 0.05em;
   -webkit-text-size-adjust: none;
   text-size-adjust: none; }
@@ -165,8 +166,7 @@ body {
 
 .serif, p {
   font-family: "leitura-news", "TimesNewRoman", "Times New Roman", serif !important;
-  font-style: normal !important;
-  line-height: 32px !important; }
+  font-style: normal !important; }
 
 .lydian-italic {
   font-family: LydianBT-Italic, georgia;
@@ -417,10 +417,7 @@ body {
 .bg-center {
   background-position: center center; }
 
-.mobile-show {
-  display: none !important; }
-
-@media screen and (max-width: 322px) {
+@media screen and (max-width: 769px) {
   .mobile-show,
   .mobile-block {
     display: block !important; }
@@ -573,7 +570,7 @@ body {
   height: 100vh; }
 
 .woodsman {
-  background: url(../journal/woodsman/images/woodsman-header.jpg) no-repeat;
+  background-image: url(../journal/woodsman/images/woodsman-header.jpg);
   background-position: center bottom; }
 
 .feature-meta {
@@ -593,29 +590,108 @@ body {
   text-align: center;
   line-height: 20px; }
 
-@media screen and (max-width: 768px) {
-  .issue-wrapper {
-    margin: 0; }
+progress {
+  display: block;
+  width: 100%;
+  height: 0.2rem;
+  margin: 0.75rem 0;
+  background-color: #e2e2e2;
+  border: 0;
+  -webkit-appearance: none;
+  cursor: pointer; }
 
-  .issue-header {
-    height: 800px; }
+progress::-webkit-progress-bar {
+  -webkit-appearance: none;
+  background-color: rgba(0, 0, 0, 0.125); }
 
-  .nav-issues {
-    width: 150px; } }
-@media screen and (max-width: 768px) and (max-width: 322px) {
-  .issue-wrapper {
-    margin: 0; }
+progress::-webkit-progress-value {
+  -webkit-appearance: none;
+  background-color: #e2e2e2; }
 
-  .nav-player {
-    width: 100%;
-    height: 70px; }
+progress::-moz-progress-bar {
+  background-color: #f52; }
 
-  .issue-header {
-    height: 480px; }
+.track-title {
+  float: left;
+  display: block;
+  display: table-cell;
+  vertical-align: middle;
+  width: 150px; }
 
-  .mark-sm {
-    width: 60px;
-    padding-left: 2px; } }
+.player {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.player-controls {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 20px;
+  z-index: 3000; }
+
+.player-controls svg {
+  width: .8rem; }
+
+.player-controls button {
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  margin-left: 10px; }
+
+@-webkit-keyframes popin {
+  from {
+    -webkit-transform: scale(0.8); }
+
+  to {
+    -webkit-transform: scale(1); } }
+
+@-moz-keyframes popin {
+  from {
+    -moz-transform: scale(0.8); }
+
+  to {
+    -moz-transform: scale(1); } }
+
+@keyframes popin {
+  from {
+    transform: scale(0.8); }
+
+  to {
+    transform: scale(1); } }
+
+.popin {
+  -webkit-animation: popin .1s linear;
+  -moz-animation: popin .1s linear;
+  animation: popin .1s linear; }
+
+@-webkit-keyframes slidedown {
+  from {
+    -webkit-transform: translateY(-100%); }
+
+  to {
+    -webkit-transform: translateY(0); } }
+
+@-moz-keyframes slidedown {
+  from {
+    -moz-transform: translateY(-100%); }
+
+  to {
+    -moz-transform: translateY(0); } }
+
+@keyframes slidedown {
+  from {
+    transform: translateY(-100%); }
+
+  to {
+    transform: translateY(0); } }
+
+.slidedown {
+  -webkit-animation: slidedown .1s ease;
+  -moz-animation: slidedown .1s ease;
+  animation: slidedown .1s ease; }
+
 .button {
   font-family: "aktiv-grotesk-std", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -892,6 +968,7 @@ body {
   width: 30px;
   padding-left: 21px;
   padding-top: 10px;
+  padding-right: 21px;
   fill: white; }
 
 .nav-home-button {
@@ -935,8 +1012,50 @@ body {
 .toggle-down {
   width: 12px;
   margin-left: 15px;
+  margin-top: 10px;
   fill: #333333; }
 
+@media screen and (max-width: 450px) {
+  .toggle-down {
+    fill: #3b00cc; }
+
+  .player-controls {
+    padding-right: 0;
+    padding-left: 15px; }
+
+  .nav-player {
+    width: 25px; }
+
+  .player {
+    display: none; }
+
+  .track-title {
+    display: none; }
+
+  .nav-social {
+    display: none; }
+
+  .player-controls button {
+    margin-left: 1px;
+    margin-top: 2px; }
+
+  .nav-mark {
+    width: 50px; }
+
+  .mark-sm {
+    padding-right: 15px; } }
+@media screen and (max-width: 768px) {
+  .issue-3 {
+    display: none; }
+
+  .issue-wrapper {
+    margin: 0; }
+
+  .issue-header {
+    height: 800px; }
+
+  .nav-issues {
+    width: 150px; } }
 @font-face {
   font-family: 'LydianBT-Italic';
   src: url("../fonts/lydian-italic.eot");

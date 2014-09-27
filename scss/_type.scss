@@ -12,24 +12,51 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Base Type Scale
-h1, .h1 { font-size: $h1; }
-h2, .h2 { font-size: $h2; }
-h3, .h3 { font-size: $h3; }
-h4, .h4,
-p, dl, ol, ul  { font-size: $h4; }
-h5, .h5        { font-size: $h5; line-height: $lh3; }
-h6, .h6, small { font-size: $h6; }
+h1 {
+  font-size: $h1;
+}
+
+h2 {
+  font-size: $h2;
+}
+
+h3 {
+  font-size: $h3;
+}
+
+h4, dl, ol, ul  {
+  font-size: $h4;
+}
+
+p {
+  font-size: $h3;
+  line-height: 1.75em;
+}
+
+h5 {
+  font-size: $h5;
+  line-height: $lh3;
+}
+
+h6, small {
+  font-size: $h6;
+}
 
 // Responsive Type Scale
 @if ($responsive-type) {
   @media screen and (min-width: $breakpoint-desktop) {
     .h1 { font-size: $desktop-h1; }
-    .h2 { font-size: $desktop-h2; }
+    .h2 {
+      font-size: $desktop-h2;
+      line-height: 1.5em;
+    }
     .h3 { font-size: $desktop-h3; }
-    .h4 { font-size: $desktop-h4; }
+    .h4, p {
+      font-size: $desktop-h4;
+      line-height: 1.7em;
+    }
     .h5 { font-size: $desktop-h5; }
     .h6 { font-size: $desktop-h6; }
-    p {font-size: $desktop-h4; }
   }
 }
 
@@ -77,7 +104,6 @@ h6, .h6, small { font-size: $h6; }
 body {
   font-family: $sans-serif;
   font-weight: 400;
-  line-height: 1.75rem;
   letter-spacing: $ls05;
   -webkit-text-size-adjust: none;
           text-size-adjust: none;
@@ -113,7 +139,6 @@ body {
 .serif, p {
   font-family: $serif !important;
   font-style: normal !important;
-  line-height: 32px !important;
 }
 
 .lydian-italic {

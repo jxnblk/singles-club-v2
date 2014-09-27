@@ -28,8 +28,7 @@
 .bg-center { background-position: center center; }
 
 // Responsive states
-.mobile-show { display: none !important; }
-@media screen and (max-width: $breakpoint-iphone) {
+@media screen and (max-width: $breakpoint-desktop) {
   .mobile-show,
   .mobile-block  { display: block !important; }
   .mobile-block  { width: 100%; }
