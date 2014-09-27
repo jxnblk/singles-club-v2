@@ -31,6 +31,16 @@ progress {
     padding-right: 10px;
 }
 
+//Full width player for mobile
+.full-player progress {
+  height: .5rem;
+  margin-top: 0;
+}
+
+.full-player {
+  border-top: .2em solid $black;
+}
+
 .player-controls {
     display: table-cell;
     vertical-align: middle;

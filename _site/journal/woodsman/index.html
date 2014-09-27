@@ -180,6 +180,11 @@
           </div>
         </div>
       </div>
+      
+      <div class="full-player full-width">
+        <progress class="bg-highlight" value="{{ currentTime / duration || 0 }}" ng-click="seek($event)">{{ currentTime / duration }}</progress>
+      </div>
+      
     </div>
     </div>
 

@@ -110,9 +110,17 @@
   fill: $dark-gray;
 }
 
+@media screen and (min-width: $breakpoint-desktop) {
+
+.full-player {
+  display: none;
+}
+
+}
+
 //iPhone only
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 580px) {
   .toggle-down {
     fill: $blue;
   }

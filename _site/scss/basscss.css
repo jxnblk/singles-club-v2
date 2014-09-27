@@ -624,6 +624,13 @@ progress::-moz-progress-bar {
   padding-left: 10px;
   padding-right: 10px; }
 
+.full-player progress {
+  height: .5rem;
+  margin-top: 0; }
+
+.full-player {
+  border-top: 0.2em solid black; }
+
 .player-controls {
   display: table-cell;
   vertical-align: middle;
@@ -1015,7 +1022,10 @@ progress::-moz-progress-bar {
   margin-top: 10px;
   fill: #333333; }
 
-@media screen and (max-width: 450px) {
+@media screen and (min-width: 769px) {
+  .full-player {
+    display: none; } }
+@media screen and (max-width: 580px) {
   .toggle-down {
     fill: #3b00cc; }
 

@@ -110,6 +110,11 @@ socialimage: "images/smallsur_facebook.jpg"
           </div>
         </div>
       </div>
+      {% raw %}
+      <div class="full-player full-width">
+        <progress class="bg-highlight" value="{{ currentTime / duration || 0 }}" ng-click="seek($event)">{{ currentTime / duration }}</progress>
+      </div>
+      {% endraw %}
     </div>
     </div>
 
