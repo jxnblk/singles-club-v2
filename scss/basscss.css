@@ -1024,11 +1024,13 @@ progress::-moz-progress-bar {
   padding: .5em;
   text-align: center; }
 
-@media screen and (min-width: 769px) {
-  .full-player {
-    display: none; }
+.mini-track-meta {
+  text-align: right;
+  float: left;
+  padding-right: 15px; }
 
-  .mobile-player-controls {
+@media screen and (min-width: 769px) {
+  .full-player, .mobile-player-controls, .mini-track-meta {
     display: none; } }
 @media all and (max-width: 768px) and (min-width: 580px) {
   .mobile-player-controls {
@@ -1037,13 +1039,7 @@ progress::-moz-progress-bar {
   .toggle-down {
     fill: #3b00cc; }
 
-  .nav-social {
-    display: none; }
-
-  .issue-3 {
-    display: none; }
-
-  .nav-player {
+  .nav-social, .issue-3, .nav-player {
     display: none; }
 
   .mobile-player-controls {
@@ -1060,7 +1056,14 @@ progress::-moz-progress-bar {
 
   .player-controls {
     padding-right: 5px;
-    padding-left: 0px; }
+    padding-left: 0px;
+    text-align: right; }
+
+  .player {
+    display: none; }
+
+  .track-title {
+    display: none; }
 
   .nav-home-button {
     cursor: pointer;

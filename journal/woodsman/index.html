@@ -76,7 +76,11 @@ socialimage: "images/smallsur_facebook.jpg"
                 </div>
                   {% raw %}
                   <div class="player-controls">
-                    <button class="no-wrap play-pause" ng-click="playPause()">
+                    <button style="float: right;" class="no-wrap play-pause" ng-click="playPause()">
+                      <!--Adds title to minimized mobile player -->
+                      <div class="light-gray ls05 mini-track-meta">
+                        <h5>Side A: Further</h5>
+                      </div>
                       <svg ng-if="player.playing != track" viewBox=“0 0 32 32” plangular-icon="play" class="popin"></svg>
                       <svg ng-if="player.playing == track" viewBox=“0 0 32 32” plangular-icon="pause" class="popin"></svg>
                     </button>

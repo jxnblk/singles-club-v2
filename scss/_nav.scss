@@ -112,14 +112,17 @@
   text-align: center;
 }
 
+.mini-track-meta {
+  text-align: right;
+  float: left;
+  padding-right: 15px;
+}
+
 // Hides mobile audio player styles on desktop
 @media screen and (min-width: $breakpoint-desktop) {
-.full-player {
-  display: none;
-}
-.mobile-player-controls {
-  display: none;
-}
+  .full-player, .mobile-player-controls, .mini-track-meta {
+    display: none;
+    }
 }
 
 
@@ -133,13 +136,7 @@
   .toggle-down {
     fill: $blue;
   }
-  .nav-social {
-    display: none;
-  }
-  .issue-3 {
-    display: none;
-  }
-  .nav-player {
+  .nav-social, .issue-3, .nav-player {
     display: none;
   }
   .mobile-player-controls {
@@ -160,6 +157,13 @@
   .player-controls {
     padding-right: 5px;
     padding-left: 0px;
+    text-align: right;
+  }
+  .player {
+    display: none;
+  }
+  .track-title {
+    display: none;
   }
   .nav-home-button {
   cursor: pointer;
