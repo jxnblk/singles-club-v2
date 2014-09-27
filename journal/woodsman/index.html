@@ -43,7 +43,6 @@ socialimage: "images/smallsur_facebook.jpg"
             <div class="issue-nav-element nav-home-button nav-mark bg-highlight">
               <div class="table mobile-table">
                 <div class="table-cell mobile-table-cell">
-                  <div class="mark-sm">
                   <a href="#">
                     <svg version="1.1" mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve" fill="#fff">
@@ -57,7 +56,6 @@ socialimage: "images/smallsur_facebook.jpg"
                         C445.8,704.6,550.6,628.9,553.5,515.4z"/>
                     </svg>
                   </a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -88,6 +86,20 @@ socialimage: "images/smallsur_facebook.jpg"
                   </div>
                   {% endraw %}
               </div>
+          </div>
+          <div class="issue-nav-element nav-home-button mobile-player-controls">
+            <div class="table mobile-table">
+              <div class="table-cell mobile-table-cell">
+                {% raw %}
+                  <div class="player-controls">
+                  <button class="no-wrap play-pause" ng-click="playPause()">
+                    <svg ng-if="player.playing != track" viewBox=“0 0 32 32” plangular-icon="play" class="popin"></svg>
+                    <svg ng-if="player.playing == track" viewBox=“0 0 32 32” plangular-icon="pause" class="popin"></svg>
+                  </button>
+                  </div>
+                {% endraw %}
+              </div>
+            </div>
           </div>
           <div class="issue-nav-element nav-social px2 center">
             <div style="margin-top:9px">

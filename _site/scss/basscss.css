@@ -971,19 +971,12 @@ progress::-moz-progress-bar {
   z-index: 9999;
   top: 0; }
 
-.mark-sm {
-  width: 30px;
-  padding-left: 21px;
-  padding-top: 10px;
-  padding-right: 21px;
-  fill: white; }
-
 .nav-home-button {
   cursor: pointer;
   border: none;
   -webkit-appearance: none;
   appearance: none; }
-  .nav-home-button:hover, .nav-home-button:focus {
+  .nav-home-button:hover {
     text-decoration: none;
     color: white !important;
     background-color: #e2e2e2; }
@@ -993,7 +986,12 @@ progress::-moz-progress-bar {
   vertical-align: middle; }
 
 .nav-mark {
-  width: 70px; }
+  width: 50px;
+  padding: 15px;
+  text-align: center; }
+
+.nav-mark svg {
+  width: 30px; }
 
 .nav-issues {
   width: 300px; }
@@ -1022,40 +1020,36 @@ progress::-moz-progress-bar {
   margin-top: 10px;
   fill: #333333; }
 
+.mobile-player-controls {
+  padding: .5em;
+  text-align: center; }
+
 @media screen and (min-width: 769px) {
   .full-player {
+    display: none; }
+
+  .mobile-player-controls {
+    display: none; } }
+@media all and (max-width: 768px) and (min-width: 580px) {
+  .mobile-player-controls {
     display: none; } }
 @media screen and (max-width: 580px) {
   .toggle-down {
     fill: #3b00cc; }
 
-  .player-controls {
-    padding-right: 0;
-    padding-left: 15px; }
-
-  .nav-player {
-    width: 25px; }
-
-  .player {
-    display: none; }
-
-  .track-title {
-    display: none; }
-
   .nav-social {
     display: none; }
 
-  .player-controls button {
-    margin-left: 1px;
-    margin-top: 2px; }
-
-  .nav-mark {
-    width: 50px; }
-
-  .mark-sm {
-    padding-right: 15px; } }
-@media screen and (max-width: 768px) {
   .issue-3 {
+    display: none; }
+
+  .nav-player {
+    display: none; }
+
+  .mobile-player-controls {
+    background-color: #111111; } }
+@media screen and (max-width: 768px) {
+  .nav-social {
     display: none; }
 
   .issue-wrapper {
@@ -1064,8 +1058,25 @@ progress::-moz-progress-bar {
   .issue-header {
     height: 800px; }
 
-  .nav-issues {
-    width: 150px; } }
+  .player-controls {
+    padding-right: 5px;
+    padding-left: 0px; }
+
+  .nav-home-button {
+    cursor: pointer;
+    border: none;
+    -webkit-appearance: none;
+    appearance: none; }
+    .nav-home-button:hover {
+      text-decoration: none;
+      color: white !important;
+      background-color: black; }
+
+  .nav-mark {
+    padding-top: 14px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px; } }
 @font-face {
   font-family: 'LydianBT-Italic';
   src: url("../fonts/lydian-italic.eot");
@@ -1563,6 +1574,8 @@ a {
   .button:focus {
     outline: none;
     box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(59, 0, 204, 0.5); }
+  .button:focus {
+    outline: none; }
 
 .button-blue {
   color: #fff;

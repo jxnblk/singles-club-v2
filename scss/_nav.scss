@@ -45,22 +45,13 @@
   top:0;
 }
 
-.mark-sm {
-  width: 30px;
-  padding-left: 21px;
-  padding-top: 10px;
-  padding-right: 21px;
-  fill: $white;
-}
-
 //Creates linking Singles Club mark in NAV
 .nav-home-button {
   cursor: pointer;
   border: none;
   -webkit-appearance: none;
   appearance: none;
-  &:hover,
-  &:focus {
+  &:hover {
     text-decoration: none;
     color: $white !important;
     background-color: $light-gray;
@@ -73,7 +64,13 @@
 }
 
 .nav-mark {
-  width: 70px;
+  width: 50px;
+  padding: 15px;
+  text-align: center;
+}
+
+.nav-mark svg {
+  width: 30px;
 }
 
 .nav-issues {
@@ -110,50 +107,48 @@
   fill: $dark-gray;
 }
 
-@media screen and (min-width: $breakpoint-desktop) {
+.mobile-player-controls {
+  padding: .5em;
+  text-align: center;
+}
 
+// Hides mobile audio player styles on desktop
+@media screen and (min-width: $breakpoint-desktop) {
 .full-player {
   display: none;
 }
-
+.mobile-player-controls {
+  display: none;
+}
 }
 
-//iPhone only
 
-@media screen and (max-width: 580px) {
+@media all and (max-width: $breakpoint-mobile) and (min-width: $breakpoint-iphone) {
+  .mobile-player-controls {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $breakpoint-iphone) {
   .toggle-down {
     fill: $blue;
-  }
-  .player-controls {
-    padding-right: 0;
-    padding-left: 15px;
-  }
-  .nav-player {
-    width: 25px;
-  }
-  .player {
-    display: none;
-  }
-  .track-title {
-    display: none;
   }
   .nav-social {
     display: none;
   }
-  .player-controls button {
-    margin-left: 1px;
-    margin-top: 2px;
+  .issue-3 {
+    display: none;
   }
-  .nav-mark {
-    width: 50px;
+  .nav-player {
+    display: none;
   }
-  .mark-sm {
-    padding-right: 15px;
+  .mobile-player-controls {
+    background-color: $off-black;
   }
 }
 
 @media screen and (max-width: $breakpoint-mobile) {
-  .issue-3 {
+  .nav-social {
     display: none;
   }
   .issue-wrapper {
@@ -162,7 +157,25 @@
   .issue-header {
     height: 800px;
   }
-  .nav-issues {
-    width: 150px;
+  .player-controls {
+    padding-right: 5px;
+    padding-left: 0px;
+  }
+  .nav-home-button {
+  cursor: pointer;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none;
+  &:hover {
+    text-decoration: none;
+    color: $white !important;
+    background-color: $black;
+    }
+  }
+  .nav-mark {
+    padding-top: 14px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
