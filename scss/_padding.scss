@@ -30,6 +30,7 @@
 .pt4  { padding-top: 4*$space; }
 .pt5  { padding-top: 6*$space; }
 .pt6  { padding-top: 8*$space; }
+.pt7  { padding-top: 10*$space; }
 
 .pb1  { padding-bottom: .5*$space; }
 .pb2  { padding-bottom: $space; }
@@ -47,6 +48,10 @@
 
 @media screen and (max-width: $breakpoint-mobile) {
   .clear-padding {
-    padding: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .clear-padding-top {
+    padding-top: 0 !important;
   }
 }

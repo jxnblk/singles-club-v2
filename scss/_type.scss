@@ -51,12 +51,16 @@ h6, small {
       line-height: 1.5em;
     }
     .h3 { font-size: $desktop-h3; }
-    .h4, p {
+    .h4 {
       font-size: $desktop-h4;
-      line-height: 1.7em;
+      line-height: 1.4em;
     }
     .h5 { font-size: $desktop-h5; }
     .h6 { font-size: $desktop-h6; }
+    p {
+      font-size: $desktop-h4;
+      line-height: 1.4em;
+    }
   }
 }
 
