@@ -19,7 +19,11 @@
 //Feature Meta
 .feature-meta {
   // border-bottom: 1px solid $light-gray;
-  border-top: 1px solid $light-gray;
+  border-top: 1px solid $gray;
+}
+
+.feature-meta h5 {
+  line-height: 1em !important;
 }
 
 .meta h5 {
@@ -32,8 +36,8 @@
     height: 100%;
     height: 20px;
     padding: 8px;
-    border: 1px solid $light-gray;
-    color: $light-gray;
+    border: 1px solid $gray;
+    color: $gray;
     text-align: center;
     line-height: 20px;
 }

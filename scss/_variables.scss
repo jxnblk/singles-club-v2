@@ -10,7 +10,7 @@ $line-height-heading: 1.5 !default;
 $lydian-italic: LydianBT-Italic, georgia;
 
 // Type Scale
-$h1: 1.953em;
+$h1: 3.5em;
 $h2: 1.563em;
 $h3: 1.25em;
 $h4: 1em;
@@ -18,8 +18,8 @@ $h5: 0.8em;
 $h6: 0.64em;
 
 // Responsive type scale
-$responsive-type: true !default;
-$desktop-h1: 4em;
+$responsive-type: true;
+$desktop-h1: 5em;
 $desktop-h2: 2.1em;
 $desktop-h3: 1.953em;
 $desktop-h4: 1.563em;

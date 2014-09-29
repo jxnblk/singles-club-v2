@@ -36,9 +36,9 @@
 
 .paralax-image {
   background-position: center center;
-  background-size: cover;
-  height: 400px;
+  background-size: cover 100%;
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 // Responsive states
