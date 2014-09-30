@@ -443,6 +443,12 @@ body {
 
 .paralax-image {
   background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
+
+.paralax-image-no-crop {
+  background-position: center center;
   background-size: cover 100%;
   background-attachment: fixed;
   background-repeat: no-repeat; }
@@ -466,6 +472,9 @@ body {
 
   .paralax-mobile-fill {
     background-size: fill; } }
+@media screen and (min-width: 769px) {
+  .desktop-hide {
+    display: none !important; } }
 @media all and (max-width: 580px) {
   .iphone-hide {
     display: none; } }
@@ -1659,6 +1668,14 @@ a {
   .button-purple:hover {
     color: #fff;
     background-color: #3d0099; }
+
+.button-white {
+  color: #6600ff;
+  text-transform: uppercase;
+  background-color: white; }
+  .button-white:hover {
+    color: #6600ff;
+    background-color: #e2e2e2; }
 
 .button-inactive {
   color: #fff;

@@ -55,6 +55,17 @@
   &:focus {}
 }
 
+.button-white {
+  color: $purple;
+  text-transform: uppercase;
+  background-color: $white;
+  &:hover {
+    color: $purple;
+    background-color: $light-gray;
+  }
+  &:focus {}
+}
+
 .button-inactive {
   color: #fff;
   background-color: $mid-gray;

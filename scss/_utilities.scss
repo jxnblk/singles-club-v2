@@ -36,6 +36,13 @@
 
 .paralax-image {
   background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.paralax-image-no-crop {
+  background-position: center center;
   background-size: cover 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -50,6 +57,10 @@
   .mobile-center { text-align: center; }
   .mobile-clear { float: none !important;}
   .paralax-mobile-fill { background-size: fill; }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .desktop-hide { display: none !important; }
 }
 
 @media all and (max-width: $breakpoint-iphone) {

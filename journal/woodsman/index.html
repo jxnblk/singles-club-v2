@@ -1,6 +1,6 @@
 ---
 title: "Issue 3 – Woodsman"
-description: "Singles Club Issue 2: Small Sur"
+description: "Singles Club Issue 3: Woodsman"
 socialimage: "images/smallsur_facebook.jpg"
 ---
 <!doctype html>
@@ -77,6 +77,28 @@ socialimage: "images/smallsur_facebook.jpg"
       }
   });
 </script>
+  <!--Smooth Anchor Scroll-->
+  <script>
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+  </script>
+  <!--Twitter-->
+  <script type="text/javascript">
+  window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
+  </script>
 </head>
 
 <body ng-app="plangular">
@@ -97,9 +119,11 @@ socialimage: "images/smallsur_facebook.jpg"
         <div class="table mobile-table" style="height: 100vh;">
           <div class="table-cell mobile-table-cell center white">
             <h1 class="h1">Woodsman</h1>
-            <div ng-click="playPause()" class="button button-purple mt2 white">
-              <a href="#">Listen & Begin</a>
-            </div>
+            <a href="#feature1">
+              <div ng-click="playPause()" class="button button-purple mt2 white">
+                Listen & Begin
+              </div>
+            </a>
             <div class="pt3">
               <div class="meta">
                 <h5>Audio is recommended for this feature. <br>Just hit Listen & Begin.</h5>
@@ -183,8 +207,8 @@ socialimage: "images/smallsur_facebook.jpg"
           </div>
           <div class="issue-nav-element nav-social px2 center">
             <div style="margin-top:9px">
-              <a href="https://twitter.com/singlesclubfm" class="ss-icon">twitter</a>
-              <a href="http://www.facebook.com/singlesclubfm" class="ss-icon pl2">facebook</a>
+              <a href="https://twitter.com/intent/tweet?text={{ page.description }}&url=http://singlesclub.fm{{ page.url }}" class="ss-icon">twitter</a>
+              <a href="https://www.facebook.com/sharer/sharer.php?u=http://singlesclub.fm{{ page.url }}" class="ss-icon pl2">facebook</a>
             </div>
           </div>
       </div>
@@ -209,8 +233,7 @@ socialimage: "images/smallsur_facebook.jpg"
       {% endraw %}
     </div>
     </div>
-
-    <div class="container px2">
+    <div id="feature1" class="container px2">
       <!--FEATURE 1-->
       <div class="row">
         <div class="col col-10 col-offset-1 py3">
@@ -239,7 +262,7 @@ socialimage: "images/smallsur_facebook.jpg"
         <div class="col col-8 col-offset-2">
           <p class="py2">Gone without a trace, the Monster Island Basement was once half a square-block on River Street by the Williamsburg waterfront that held an art gallery, a hall of practice spaces, a single residence, and an intimate venue primarily for emerging local and national artists. Many of the acts that played the basement would “not be playing this kind of venue for much longer,” the media would perpetuate, but these sorts of rooms had long been a staple of the New York City art-party scene. This ethos was at fever pitch in 2010.</p>
 
-          <p class="py2">The authenticity of a tiny venue with hoards of musicians, artists, and chic photographers had even enticed hip-hop mogul Damon Dash to go DIY, throwing shows in his studio basement in Manhattan with the help of a few young, enterprising New Yorkers. They deemed it Under 100, pairing locals with widely known acts like Erykah Badu and Mos Def. It was the height of blog-rock. Bands like the <a href="#">Vivian Girls</a> and WAVVES went from forming in ash-covered practice spaces to selling out venues seemingly overnight, Athens’ Black Kids were signed to Columbia Records after posting one track to MySpace, and mischievous sites like Pitchfork, Chocolate Bobka, and Get Off The Coast were informing the record industry more than Rolling Stone and SPIN. It was an exciting time to be in a band, it seemed like anyone could make it, and fast with a pinch of luck.</p>
+          <p class="py2">The authenticity of a tiny venue with hoards of musicians, artists, and chic photographers had even enticed hip-hop mogul Damon Dash to go DIY, throwing shows in his studio basement in Manhattan with the help of a few young, enterprising New Yorkers. They deemed it Under 100, pairing locals with widely known acts like Erykah Badu and Mos Def. It was the height of blog-rock. Bands like the Vivian Girls and WAVVES went from forming in ash-covered practice spaces to selling out venues seemingly overnight, Athens’ Black Kids were signed to Columbia Records after posting one track to MySpace, and mischievous sites like Pitchfork, Chocolate Bobka, and Get Off The Coast were informing the record industry more than Rolling Stone and SPIN. It was an exciting time to be in a band, it seemed like anyone could make it, and fast with a pinch of luck.</p>
 
           <p class="py2"> After months of demoing in Denver, Woodsman had seen some of this luck. With several tracks leaked across the blogosphere, Woodsman’s moss covered kraut-rock had garnered the attention of young upstart label Mexican Summer, leading to the release of Collages, one of their earliest full-fledged albums in December of 2009. “Any attention was a shock to us in the first place,” drummer Dylan Shumaker recounts. </p>
         </div>
@@ -278,7 +301,7 @@ socialimage: "images/smallsur_facebook.jpg"
     </div>
     <div class="image-set">
       <div class="mobile-table table pull-quote" style="background-image:url('images/woodsman-2.jpg'); background-position: center center; background-size: cover;">
-        <div class="table-cell white mobile-table-cell px4 py6">
+        <div class="table-cell white mobile-table-cell px2 py6">
           <div class="container">
             <h2 class="h2"> "Coming to New York meant recording in a studio, not a house. New York meant constantly thinking about money, not just music. It meant living the hustle because the hustle was the only way to survive." </h2>
           </div>
@@ -381,16 +404,24 @@ socialimage: "images/smallsur_facebook.jpg"
           </div>
           <div class="row">
             <div class="col col-3">
-              <img src="images/firetalk-babybirds.jpg" class="fit py2">
+              <a href="http://firetalk.bandcamp.com/album/think-tone" target="_blank">
+                <img src="images/firetalk-babybirds.jpg" class="fit py2">
+              </a>
             </div>
             <div class="col col-3">
-              <img src="images/firetalk-campfires.jpg" class="fit py2">
+              <a href="http://firetalk.bandcamp.com/album/tomorrow-tomorrow" target="_blank">
+                <img src="images/firetalk-campfires.jpg" class="fit py2">
+              </a>
             </div>
             <div class="col col-3">
-              <img src="images/firetalk-katrina.jpg" class="fit py2">
+              <a href="http://firetalk.bandcamp.com/album/katrina-stonehart" target="_blank">
+                <img src="images/firetalk-katrina.jpg" class="fit py2">
+              </a>
             </div>
             <div class="col col-3">
-              <img src="images/firetalk-tjutjuna.jpg" class="fit py2">
+              <a href="http://firetalk.bandcamp.com/album/tjutjuna" target="_blank">
+                <img src="images/firetalk-tjutjuna.jpg" class="fit py2">
+              </a>
             </div>
           </div>
         </div>
@@ -399,9 +430,12 @@ socialimage: "images/smallsur_facebook.jpg"
   </div>
   <!-- Feature 3 -->
   <div class="issue-wrapper bg-white pb6">
-    <div class="">
-      <div class="full-width paralax-image" style="background-image:url('images/artifacts.jpg'); height: 400px;">
+    <div class="iphone-hide">
+      <div class="full-width paralax-image-no-crop" style="background-image:url('images/artifacts.jpg'); height: 400px;">
       </div>
+    </div>
+    <div class="pt4 pb2 px2 desktop-hide">
+      <img src="images/artifacts-mobile.jpg" class="full-width">
     </div>
     <div class="container px2">
       <div class="row">
@@ -417,28 +451,28 @@ socialimage: "images/smallsur_facebook.jpg"
         </div>
       </div>
     </div>
-    <div class="oh full-width mobile-center pt4">
-      <div class="col-7 col col-offset-2">
-        <img src="images/poster.jpg" class="fit py2">
-      </div>
-      <div class="col col-2 clear-padding-top pt7">
-        <h4 class="h4">Larimer Lounge (2008)</h4>
-        <h5 class="h5">First Woodsman Bar show in Denver functioning as a two piece. Poster handmade by Trevor.</h5>
-      </div>
-    </div>
     <div class="oh  full-width mobile-center pt6">
       <div class="col col-8 col-offset-1">
         <img src="images/cdr-front.jpg" class="fit py2">
       </div>
-      <div class="col col-3 pt7 clear-padding-top">
-        <h4 class="h4">Tour CDR (2008)</h4>
-        <h5 class="h5">The first material ever released by Woodsman working as a two piece before the addition of Mark and Dylan.</h5>
+      <div class="col col-2 pt7 clear-padding-top">
+        <h4 class="h4">First CDR (2007)</h4>
+        <h5 class="h5">The first Woodsman release. Recorded as a two-piece prior to the addition of Mark and Dylan.</h5>
       </div>
     </div>
     <div class=" oh full-width">
         <div class="col col-8 col-offset-2">
           <img src="images/cdr-back.jpg" class="fit py2">
         </div>
+    </div>
+    <div class="oh full-width mobile-center pt4">
+      <div class="col-7 col col-offset-2">
+        <img src="images/poster.jpg" class="fit py2">
+      </div>
+      <div class="col col-2 clear-padding-top pt7">
+        <h4 class="h4">Larimer Lounge (2008)</h4>
+        <h5 class="h5">Trevor and Eston. Early Woodsman show in Denver as a four piece. Poster handmade by Trevor.</h5>
+      </div>
     </div>
     <div class=" oh full-width mobile-center py6">
       <div class="col col-10 col-offset-1">
@@ -452,12 +486,25 @@ socialimage: "images/smallsur_facebook.jpg"
         <img src="images/polaroid.jpg" class="fit py2">
       </div>
       <div class="col col-3 clear-padding-top pt4">
-        <h4 class="h4">Mixing Board Tape (2014)</h4>
-        <h5 class="h5">Mixing Board tape from the first session of the self titled LP.</h5>
+        <h4 class="h4">Mixing Board Tape (2009)</h4>
+        <h5 class="h5">Mixing board tape from tracking 'Collages' released on <a href="www.mexicansummer.com">Mexican Summer</a></h5>
       </div>
     </div>
   </div>
-  <div class="">
+
+  <div class="bg-highlight">
+    <div class="container px2 center white py4">
+      <h2 class="h2"> Like what you see & hear? This is just the half of it.<h2>
+      <h5 class="h5"> This issue is part of a series of four 45 singles. Subscribe now for just $65.</h5>
+      <a href="http://shop.singlesclub.fm/product/singles-club-2014-subscription">
+        <div class="button button-white mt2 white">
+          Learn more & Subscribe
+        </div>
+      </a>
+    </div>
+  </div>
+
+
     <div class="container white px2">
       <div class="row pt4">
         <div class="col col-6">
@@ -507,10 +554,9 @@ socialimage: "images/smallsur_facebook.jpg"
               Side A: Further
             </h6>
             <h5>
-              Music written by Bob Keal.<br>
-              Performed by Bob Keal, Andy Abelow, Austin Stahl & William Ryerson.<br>
-              Words by Mary Oliver from ‘Wild Geese’<br>
-              Recorded by Chris Freeland at Beat Babies Studios in Woodstock, MD.<br>
+              Written by Woodsman<br>
+              Produced by Daniel Schlett & Woodsman<br>
+              Recorded at Strange Weather by Daniel Schlett<br>
             </h5>
           </div>
         </div>
@@ -521,15 +567,11 @@ socialimage: "images/smallsur_facebook.jpg"
               Side B: Woodsman
             </h6>
             <h5>
-              Music written by Bob Keal.<br>
-              Performed by Bob Keal, Andy Abelow, Austin Stahl & William Ryerson.<br>
-              Words by Mary Oliver from ‘Wild Geese’<br>
-              Recorded by Chris Freeland at Beat Babies Studios in Woodstock, MD.<br>
+              Recorded & mixed by Chris Muccioli in Brooklyn, NY.
             </h5>
           </div>
         </div>
 
       </div>
     </div>
-  </div>
 </body>
